@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:mvc="http://www.springframework.org/schema/mvc" 
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+	http://www.springframework.org/schema/mvc
+	http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd
+	http://www.springframework.org/schema/context
+	http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+	
+	<mvc:annotation-driven/>  <!-- 유효성검사1 -->
+		
+	<!-- controller 패키지를 탐색하여 모든 컴포넌트를 스캔하세요. -->
+	<context:component-scan base-package="admin"/>
+	
+	<!-- HandlerMapping 설정 -->
+	<!-- 명시하지 않으면 기본 값은 BeanNameUrlHandlerMapping이다. -->
+
+	<!-- Controller 설정 -->
+
+	<!-- ViewResolver -->
+	<bean id="internalResourceViewResolver"
+		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="prefix">
+			<value>/WEB-INF/admin/</value>
+		</property>
+		<property name="suffix">
+			<value>.jsp</value>
+		</property>
+	</bean>
+
+	<!-- 
+	첫번째 bean의 id="internalResourceViewResolver"는 생략가능한데,
+	두번째 bean의 id="multipartResolver"는 생략하면 상품 입력 폼에서 입력 잘 했는데도 계속 유효성 검사 에러난다.
+	 -->
+	  
+	<!-- 
+	위의 <property name="maxInMemorySize" value="10240" /> 이 부분은 없어도 된다.10485760 : 10MB
+	
+	maxUploadSize(최대업로드 가능한 바이트크기)
+	maxInMemorySize(디스크에 임시 파일을 생성하기 전에 메모리에 보관할수있는 최대 바이트 크기, 기본값이 10240바이트)
+	defaultEncoding(요청을 파싱할 때 사용할 캐릭터 인코딩. 기본값 ISO-8859-1) 생략해도 한글화일 잘 들어간다. 
+ 	-->
+ 	
+	<!-- 주의 : SimpleMappingExceptionResolver을 빈으로 등록하는 경우 -->
+	<!-- 반드시 AnnotationMethodHandlerExceptionResolver도 빈으로 등록해주고, -->
+	<!-- order를 이용하여 순번을 지정해 줘야 한다. -->
+	<!-- <bean
+		class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerExceptionResolver">
+		<property name="order" value="1" />
+	</bean> -->
+
+	<!-- exceptionMappings는 예외 클래스와 이동할 뷰 이름을 맵핑시킨다. -->
+	<!-- <bean
+		class="org.springframework.web.servlet.handler.SimpleMappingExceptionResolver">
+		<property name="order" value="2" />
+		<property name="defaultErrorView" value="error" />
+		<property name="exceptionMappings">
+			<props>
+				<prop
+					key="org.springframework.web.multipart.MaxUploadSizeExceededException">
+					maxfileuploadsize
+				</prop>
+			</props>
+		</property>
+	</bean> -->	
+	
+	
+</beans>	
+
+<!-- 
+이 화일 만들 때..
+
+servlet-context.xml을 안의 내용만 말고 화일째 복사해서 이 화일 만들고
+resources~ 부분은 지우고..
+안의 내용은 모두 
+<beans:bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+	<beans:property name="prefix" value="/WEB-INF/product/" />
+	<beans:property name="suffix" value=".jsp" />
+</beans:bean>
+이렇게 앞에 beans:를 붙여서 만들자.
+
+member-servlet.xml도
+mall-servlet.xml도 마찬가지다.
+
+ -->

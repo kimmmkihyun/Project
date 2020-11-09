@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="member.model.Member">
+	<insert id="InsertData">
+		insert into
+		member(mnum,mid,mname,mpw,addr1,addr2,hp1,hp2,hp3,email1,email2,birth1,birth2,birth3)
+		values(mseq.nextval,#{mid},#{mname},#{mpw},#{addr1},#{addr2},#{hp1},#{hp2},
+		#{hp3},#{email1},#{email2},#{birth1},#{birth2},#{birth3})
+	</insert>
+
+	<select id="GetMember" resultType="MyMember">
+		select * from member
+		where mid= #{mid}
+	</select>
+
+	<select id="GetTotalCount" resultType="int">
+		select count(*) from member
+		<if test="whatColumn=='mname'">
+			where mname like #{keyword}
+		</if>
+
+		<if test="whatColumn=='addr1'">
+			where addr1 like #{keyword}
+		</if>
+
+		<if test="whatColumn=='birth1'">
+			where birth1 like #{keyword}
+		</if>
+	</select>
+
+	<select id="GetMemberList" resultType="MyMember">
+		select * from member
+		<if test="whatColumn=='mname'">
+			where mname like #{keyword}
+		</if>
+
+		<if test="whatColumn=='addr1'">
+			where addr1 like #{keyword}
+		</if>
+
+		<if test="whatColumn=='birth1'">
+			where birth1 like #{keyword}
+		</if>
+		order by mid
+	</select>
+	
+	<delete id="DeleteMember">
+		delete from member
+		where mnum=#{mnum}
+	</delete>
+	
+	<select id="GetOneMember" resultType="MyMember">
+		select * from member where mnum = #{mnum}
+	</select>
+	
+	<update id="UpdateMem">
+		update member set mpoint = #{mpoint}, coupon = #{coupon} where mnum = #{mnum}	
+	</update> 
+	
+	<select id="CheckID" resultType="int">
+		select count(*) from member where mid=#{checkId}
+	</select>
+	
+	<select id="FindIdByEmail" resultType="MyMember">
+		select mid,mname,email1,email2,regdate from member 
+		where mname=#{mname} and email1=#{email1} and email2=#{email2} 
+	</select>
+	
+	<select id="FindIdByHp" resultType="MyMember">
+		select mid,mname,hp1,hp2,hp3,regdate from member 
+		where mname=#{mname} and hp1=#{hp1} and hp2=#{hp2} and hp3=#{hp3}
+	</select>
+	
+	<select id="FindPwByEmail" resultType="MyMember">
+		select mid,mname,email1,email2,regdate,mpw from member 
+		where mname=#{mname} and mid=#{mid} and email1=#{email1} and email2=#{email2} 
+	</select>
+	
+	<select id="FindPwByHp" resultType="MyMember">
+		select mid,mname,hp1,hp2,hp3,regdate,mpw from member 
+		where mname=#{mname} and mid=#{mid} and hp1=#{hp1} and hp2=#{hp2} and hp3=#{hp3}
+	</select>
+	
+</mapper>
+
+
+
+
+
+
+
+
+
+
+
+

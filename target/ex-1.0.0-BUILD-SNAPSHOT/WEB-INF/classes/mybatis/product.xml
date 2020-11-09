@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="admin.model.Product">
+	
+	<insert id="InsertProduct">
+		insert into product(pnum,pcode,pcate,pname,pimage,price,point,pspec,pnote,pinputdate)
+		values(prod_seq.nextval,#{pcode},#{pcate},#{pname},#{pimage},#{price},#{point},#{pspec},#{pnote},sysdate)
+	</insert>
+	
+	<select id="GetTotalCount" resultType="int" parameterType="hashmap">
+		select count(*) from product
+		<if test="whatColumn == 'pnum'">
+			where pnum like #{keyword}
+		</if>
+		<if test="whatColumn == 'pname'">
+			where pname like #{keyword}
+		</if>
+	</select>
+	
+	<select id="GetProductList" resultType="MyProduct">
+		select * from product
+			<if test="whatColumn=='pnum'">
+				where pnum like #{keyword} 
+			</if>
+			<if test="whatColumn=='pname'">
+				where pname like #{keyword} 
+			</if>
+		order by pnum desc
+	</select>
+	
+	<select id="GetOneProduct" resultType="MyProduct">
+		select * from product where pnum = #{pnum}
+	</select>
+	
+	<delete id="DeleteProduct">
+		delete from product where pnum = #{pnum}
+	</delete>
+	
+	<update id="UpdateProduct">
+		update product set pcode = #{pcode}, pcate = #{pcate},pname = #{pname},pimage = #{pimage},price = #{price},
+		point = #{point}, pspec= #{pspec}, pnote = #{pnote} 
+		where pnum = #{pnum}
+	</update>
+</mapper>
+

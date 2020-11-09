@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="cart.model.Cart" >
+
+	<insert id="InsertCart">
+      insert into cart
+      values(cartseq.nextval,#{pimage},#{pname},#{pset},#{price},#{pqty},#{point},#{id})
+   </insert>
+   
+   <select id="GetCartList" resultType="MyCart">
+   		select * from cart
+   		where id = #{id}
+   </select>
+   
+   <delete id="DeleteCart">
+   		delete from cart
+		where cartnum = #{cartnum}
+   </delete>
+   
+   <update id="UpdateData">  
+   		update cart set pqty = #{pqty}
+   		where pname = #{pname} and pset = #{pset}
+   </update>
+
+
+	<update id="UdateCart">
+         update cart set pqty = #{pqty} where cartnum = #{cartnum}
+   </update>
+   
+   <select id="GetOneData" resultType="MyCart">
+      select * from cart where cartnum = #{cartnum}
+   </select>  
+	
+</mapper>
+
+

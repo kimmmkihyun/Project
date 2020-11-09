@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- travel.xml mapper 화일 -->
+<mapper namespace="board.BoardBean">
+ 	<insert id="InsertBoard">
+  		insert into Board values 
+  		(board_seq.nextval, #{writer},#{email},#{subject},#{passwd, jdbcType=VARCHAR}, 
+  		sysdate,#{readcount, jdbcType=INTEGER},#{ref, jdbcType=INTEGER},#{restep, jdbcType=INTEGER},#{relevel, 
+  		jdbcType=INTEGER},#{content, jdbcType=VARCHAR},#{ip, jdbcType=VARCHAR})
+  	</insert>
+
+	<select id="GetTotalCount" resultType="int">
+		select count(*) from board
+		<if test="whatColumn=='subject'">
+			where subject like #{keyword}
+		</if>
+		<if test="whatColumn=='writer'">
+			where writer like #{keyword}
+		</if>
+	</select>
+	
+	<select id="GetBoardList" resultType="MyBoard">
+		select * from board 
+  			<if test="whatColumn=='subject'">
+				where subject like #{keyword}
+			</if>
+			<if test="whatColumn=='writer'">
+				where writer like #{keyword}
+			</if>
+
+  		order by num asc
+	</select>
+	
+	<select id="GetOneBoard" resultType="MyBoard">
+		select * from board where num = #{num}
+	</select>
+	
+	<delete id="DeleteBoard">
+		delete from board where num = #{num}
+	</delete>
+	
+	<update id="UpdateOneBoard">
+		update board set writer= #{writer},email= #{email},subject= #{subject}, 
+		content= #{content}, passwd= #{passwd} where num = #{num}
+	</update>
+
+</mapper>
+

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="admin.model.Category">
+	<insert id="InsertCate">
+		insert into cate(cnum, code, cname,csum) values(cate_seq.nextval,#{code},#{cname},#{code}||#{cname})
+	</insert>
+	
+	<select id="GetTotalCount" resultType="int" parameterType="hashmap">
+		select count(*) from cate
+		<if test="whatColumn == 'code'">
+			where code like #{keyword}
+		</if>
+		<if test="whatColumn == 'cname'">
+			where cname like #{keyword}
+		</if>
+	</select>
+	
+	
+	<select id="GetCateList" resultType="MyCategory">
+		select * from cate
+			<if test="whatColumn=='code'">
+				where code like #{keyword} 
+			</if>
+			<if test="whatColumn=='cname'">
+				where cname like #{keyword} 
+			</if>
+		order by cnum desc
+	
+	</select>
+	
+		<select id="SelectAll" resultType="MyCategory">
+		select * from cate order by cnum desc
+	
+	</select>
+	
+	<select id="GetOneCate" resultType="MyCategory">
+		select * from cate where cnum = #{cnum}
+	</select>
+	
+	<delete id="DeleteCate">
+		delete from cate where cnum = #{cnum}
+	</delete>
+	
+	<update id="UpdateCate">
+		update cate set code = #{code}, cname= #{cname} where cnum = #{cnum}
+	</update>
+</mapper>
+

@@ -1,0 +1,691 @@
+--Outer/JUMPER
+insert into product(pnum,pcode,pcate,pname,pimage,price,point,pspec,pnote) 
+values(prod_seq.nextval, 'Outer', 'JUMPER', '패이보릿 보색야상', 'jumper_1.webp', 68000, 680, 'new', 'Color<br>
+beige / khaki<br><br>Fabric<br>cotton 100%<br><br>Size<br>어깨57 가슴63.5 암홀27 소매단면26 소매길이55.5 총장75<br><br>Info<br>
+비침없음/ 신축성없음/ 촉감보드라움/ 두께적당함/ 안감있음<br>');
+
+insert into product(pnum,pcode,pcate,pname,pimage,price,point,pspec,pnote) 
+values(prod_seq.nextval, 'Outer', 'JUMPER', '니트 블루종 ', 'jumper_2.webp', 38000, 380, 'new', 'Color<br>
+beige / khaki<br><br>Fabric<br>cotton 100%<br><br>Size<br>어깨57 가슴63.5 암홀27 소매단면26 소매길이55.5 총장75<br><br>Info<br>
+비침없음/ 신축성없음/ 촉감보드라움/ 두께적당함/ 안감있음<br>');
+
+insert into product(pnum,pcode,pcate,pname,pimage,price,point,pspec,pnote) 
+values(prod_seq.nextval, 'Outer', 'JUMPER', '오트 블루종', 'jumper_3.webp', 48000, 480, 'new', 'Color<br>
+beige / khaki<br><br>Fabric<br>cotton 100%<br><br>Size<br>어깨57 가슴63.5 암홀27 소매단면26 소매길이55.5 총장75<br><br>Info<br>
+비침없음/ 신축성없음/ 촉감보드라움/ 두께적당함/ 안감있음<br>');
+
+insert into product(pnum,pcode,pcate,pname,pimage,price,point,pspec,pnote) 
+values(prod_seq.nextval, 'Outer', 'JUMPER', '오트 블루종 ', 'jumper_4.webp', 58000, 580, 'best', 'Color<br>
+beige / khaki<br><br>Fabric<br>cotton 100%<br><br>Size<br>어깨57 가슴63.5 암홀27 소매단면26 소매길이55.5 총장75<br><br>Info<br>
+비침없음/ 신축성없음/ 촉감보드라움/ 두께적당함/ 안감있음<br>');
+
+insert into product(pnum,pcode,pcate,pname,pimage,price,point,pspec,pnote) 
+values(prod_seq.nextval, 'Outer', 'JUMPER', '어니언 퀼팅', 'jumper_5.webp', 68000, 680, 'best', 'Color<br>
+beige / khaki<br><br>Fabric<br>cotton 100%<br><br>Size<br>어깨57 가슴63.5 암홀27 소매단면26 소매길이55.5 총장75<br><br>Info<br>
+비침없음/ 신축성없음/ 촉감보드라움/ 두께적당함/ 안감있음<br>');
+
+insert into product(pnum,pcode,pcate,pname,pimage,price,point,pspec,pnote) 
+values(prod_seq.nextval, 'Outer', 'JUMPER', '니트 블루종', 'jumper_6.webp', 78000, 780, 'best', 'Color<br>
+beige / khaki<br><br>Fabric<br>cotton 100%<br><br>Size<br>어깨57 가슴63.5 암홀27 소매단면26 소매길이55.5 총장75<br><br>Info<br>
+비침없음/ 신축성없음/ 촉감보드라움/ 두께적당함/ 안감있음<br>');
+
+insert into product(pnum,pcode,pcate,pname,pimage,price,point,pspec,pnote) 
+values(prod_seq.nextval, 'Outer', 'JUMPER', '포드 카라', 'jumper_7.webp', 88000, 880, 'best', 'Color<br>
+beige / khaki<br><br>Fabric<br>cotton 100%<br><br>Size<br>어깨57 가슴63.5 암홀27 소매단면26 소매길이55.5 총장75<br><br>Info<br>
+비침없음/ 신축성없음/ 촉감보드라움/ 두께적당함/ 안감있음<br>');
+
+insert into product(pnum,pcode,pcate,pname,pimage,price,point,pspec,pnote) 
+values(prod_seq.nextval, 'Outer', 'JUMPER', '어텀 배색 야상', 'jumper_8.webp', 58000, 580, 'new', 'Color<br>
+beige / khaki<br><br>Fabric<br>cotton 100%<br><br>Size<br>어깨57 가슴63.5 암홀27 소매단면26 소매길이55.5 총장75<br><br>Info<br>
+비침없음/ 신축성없음/ 촉감보드라움/ 두께적당함/ 안감있음<br>');
+
+
+--Outer/MUSTANG
+insert into product(pnum,pcode,pcate,pname,pimage,price,point,pspec,pnote) 
+values(prod_seq.nextval, 'Outer', 'MUSTANG', '무스탕1', 'mustang_1.webp', 58000, 580, 'new', 'Color<br>
+beige / khaki<br><br>Fabric<br>cotton 100%<br><br>Size<br>어깨57 가슴63.5 암홀27 소매단면26 소매길이55.5 총장75<br><br>Info<br>
+비침없음/ 신축성없음/ 촉감보드라움/ 두께적당함/ 안감있음<br>');
+
+insert into product(pnum,pcode,pcate,pname,pimage,price,point,pspec,pnote) 
+values(prod_seq.nextval, 'Outer', 'MUSTANG', '무스탕2', 'mustang_2.webp', 28000, 280, 'best', 'Color<br>
+beige / khaki<br><br>Fabric<br>cotton 100%<br><br>Size<br>어깨57 가슴63.5 암홀27 소매단면26 소매길이55.5 총장75<br><br>Info<br>
+비침없음/ 신축성없음/ 촉감보드라움/ 두께적당함/ 안감있음<br>');
+
+insert into product(pnum,pcode,pcate,pname,pimage,price,point,pspec,pnote) 
+values(prod_seq.nextval, 'Outer', 'MUSTANG', '무스탕3', 'mustang_3.webp', 38000, 380, 'new', 'Color<br>
+beige / khaki<br><br>Fabric<br>cotton 100%<br><br>Size<br>어깨57 가슴63.5 암홀27 소매단면26 소매길이55.5 총장75<br><br>Info<br>
+비침없음/ 신축성없음/ 촉감보드라움/ 두께적당함/ 안감있음<br>');
+
+insert into product(pnum,pcode,pcate,pname,pimage,price,point,pspec,pnote) 
+values(prod_seq.nextval, 'Outer', 'MUSTANG', '무스탕4', 'mustang_4.webp', 48000, 480, 'best', 'Color<br>
+beige / khaki<br><br>Fabric<br>cotton 100%<br><br>Size<br>어깨57 가슴63.5 암홀27 소매단면26 소매길이55.5 총장75<br><br>Info<br>
+비침없음/ 신축성없음/ 촉감보드라움/ 두께적당함/ 안감있음<br>');
+
+insert into product(pnum,pcode,pcate,pname,pimage,price,point,pspec,pnote) 
+values(prod_seq.nextval, 'Outer', 'MUSTANG', '무스탕5', 'mustang_5.gif', 58000, 580, 'new', 'Color<br>
+beige / khaki<br><br>Fabric<br>cotton 100%<br><br>Size<br>어깨57 가슴63.5 암홀27 소매단면26 소매길이55.5 총장75<br><br>Info<br>
+비침없음/ 신축성없음/ 촉감보드라움/ 두께적당함/ 안감있음<br>');
+
+
+
+--Outer/COAT
+insert into product(pnum,pcode,pcate,pname,pimage,price,point,pspec,pnote) 
+values(prod_seq.nextval, 'Outer', 'COAT', '코트1', 'coat_1.webp', 58000, 580, 'new', 'Color<br>
+beige / khaki<br><br>Fabric<br>cotton 100%<br><br>Size<br>어깨57 가슴63.5 암홀27 소매단면26 소매길이55.5 총장75<br><br>Info<br>
+비침없음/ 신축성없음/ 촉감보드라움/ 두께적당함/ 안감있음<br>');
+
+insert into product(pnum,pcode,pcate,pname,pimage,price,point,pspec,pnote) 
+values(prod_seq.nextval, 'Outer', 'COAT', '코트2', 'coat_2.webp', 58000, 580, 'new', 'Color<br>
+beige / khaki<br><br>Fabric<br>cotton 100%<br><br>Size<br>어깨57 가슴63.5 암홀27 소매단면26 소매길이55.5 총장75<br><br>Info<br>
+비침없음/ 신축성없음/ 촉감보드라움/ 두께적당함/ 안감있음<br>');
+
+insert into product(pnum,pcode,pcate,pname,pimage,price,point,pspec,pnote) 
+values(prod_seq.nextval, 'Outer', 'COAT', '코트3', 'coat_3.webp', 68000, 680, 'new', 'Color<br>
+beige / khaki<br><br>Fabric<br>cotton 100%<br><br>Size<br>어깨57 가슴63.5 암홀27 소매단면26 소매길이55.5 총장75<br><br>Info<br>
+비침없음/ 신축성없음/ 촉감보드라움/ 두께적당함/ 안감있음<br>');
+
+insert into product(pnum,pcode,pcate,pname,pimage,price,point,pspec,pnote) 
+values(prod_seq.nextval, 'Outer', 'COAT', '코트4', 'coat_4.webp', 58000, 580, 'new', 'Color<br>
+beige / khaki<br><br>Fabric<br>cotton 100%<br><br>Size<br>어깨57 가슴63.5 암홀27 소매단면26 소매길이55.5 총장75<br><br>Info<br>
+비침없음/ 신축성없음/ 촉감보드라움/ 두께적당함/ 안감있음<br>');
+
+insert into product(pnum,pcode,pcate,pname,pimage,price,point,pspec,pnote) 
+values(prod_seq.nextval, 'Outer', 'COAT', '코트5', 'coat_5.webp', 77000, 770, 'best', 'Color<br>
+beige / khaki<br><br>Fabric<br>cotton 100%<br><br>Size<br>어깨57 가슴63.5 암홀27 소매단면26 소매길이55.5 총장75<br><br>Info<br>
+비침없음/ 신축성없음/ 촉감보드라움/ 두께적당함/ 안감있음<br>');
+
+insert into product(pnum,pcode,pcate,pname,pimage,price,point,pspec,pnote) 
+values(prod_seq.nextval, 'Outer', 'COAT', '코트6', 'coat_6.webp', 49000, 490, 'best', 'Color<br>
+beige / khaki<br><br>Fabric<br>cotton 100%<br><br>Size<br>어깨57 가슴63.5 암홀27 소매단면26 소매길이55.5 총장75<br><br>Info<br>
+비침없음/ 신축성없음/ 촉감보드라움/ 두께적당함/ 안감있음<br>');
+
+insert into product(pnum,pcode,pcate,pname,pimage,price,point,pspec,pnote) 
+values(prod_seq.nextval, 'Outer', 'COAT', '코트7', 'coat_7.webp', 68000, 680, 'best', 'Color<br>
+beige / khaki<br><br>Fabric<br>cotton 100%<br><br>Size<br>어깨57 가슴63.5 암홀27 소매단면26 소매길이55.5 총장75<br><br>Info<br>
+비침없음/ 신축성없음/ 촉감보드라움/ 두께적당함/ 안감있음<br>');
+
+insert into product(pnum,pcode,pcate,pname,pimage,price,point,pspec,pnote) 
+values(prod_seq.nextval, 'Outer', 'COAT', '코트8', 'coat_8.webp', 68000, 680, 'best', 'Color<br>
+beige / khaki<br><br>Fabric<br>cotton 100%<br><br>Size<br>어깨57 가슴63.5 암홀27 소매단면26 소매길이55.5 총장75<br><br>Info<br>
+비침없음/ 신축성없음/ 촉감보드라움/ 두께적당함/ 안감있음<br>');
+
+
+--Outer/JACKET
+insert into product(pnum,pcode,pcate,pname,pimage,price,point,pspec,pnote) 
+values(prod_seq.nextval, 'Outer', 'JACKET', '자켓1', 'jacket_1.webp', 68000, 680, 'best', 'Color<br>
+beige / khaki<br><br>Fabric<br>cotton 100%<br><br>Size<br>어깨57 가슴63.5 암홀27 소매단면26 소매길이55.5 총장75<br><br>Info<br>
+비침없음/ 신축성없음/ 촉감보드라움/ 두께적당함/ 안감있음<br>');
+
+insert into product(pnum,pcode,pcate,pname,pimage,price,point,pspec,pnote) 
+values(prod_seq.nextval, 'Outer', 'JACKET', '자켓2', 'jacket_2.webp', 77000, 770, 'best', 'Color<br>
+beige / khaki<br><br>Fabric<br>cotton 100%<br><br>Size<br>어깨57 가슴63.5 암홀27 소매단면26 소매길이55.5 총장75<br><br>Info<br>
+비침없음/ 신축성없음/ 촉감보드라움/ 두께적당함/ 안감있음<br>');
+
+insert into product(pnum,pcode,pcate,pname,pimage,price,point,pspec,pnote) 
+values(prod_seq.nextval, 'Outer', 'JACKET', '자켓3', 'jacket_3.webp', 54000, 540, 'new', 'Color<br>
+beige / khaki<br><br>Fabric<br>cotton 100%<br><br>Size<br>어깨57 가슴63.5 암홀27 소매단면26 소매길이55.5 총장75<br><br>Info<br>
+비침없음/ 신축성없음/ 촉감보드라움/ 두께적당함/ 안감있음<br>');
+
+insert into product(pnum,pcode,pcate,pname,pimage,price,point,pspec,pnote) 
+values(prod_seq.nextval, 'Outer', 'JACKET', '자켓4', 'jacket_4.webp', 38000, 380, 'new', 'Color<br>
+beige / khaki<br><br>Fabric<br>cotton 100%<br><br>Size<br>어깨57 가슴63.5 암홀27 소매단면26 소매길이55.5 총장75<br><br>Info<br>
+비침없음/ 신축성없음/ 촉감보드라움/ 두께적당함/ 안감있음<br>');
+
+insert into product(pnum,pcode,pcate,pname,pimage,price,point,pspec,pnote) 
+values(prod_seq.nextval, 'Outer', 'JACKET', '자켓5', 'jacket_5.webp', 68000, 680, 'best', 'Color<br>
+beige / khaki<br><br>Fabric<br>cotton 100%<br><br>Size<br>어깨57 가슴63.5 암홀27 소매단면26 소매길이55.5 총장75<br><br>Info<br>
+비침없음/ 신축성없음/ 촉감보드라움/ 두께적당함/ 안감있음<br>');
+
+insert into product(pnum,pcode,pcate,pname,pimage,price,point,pspec,pnote) 
+values(prod_seq.nextval, 'Outer', 'JACKET', '자켓6', 'jacket_6.webp', 77000, 770, 'best', 'Color<br>
+beige / khaki<br><br>Fabric<br>cotton 100%<br><br>Size<br>어깨57 가슴63.5 암홀27 소매단면26 소매길이55.5 총장75<br><br>Info<br>
+비침없음/ 신축성없음/ 촉감보드라움/ 두께적당함/ 안감있음<br>');
+
+insert into product(pnum,pcode,pcate,pname,pimage,price,point,pspec,pnote) 
+values(prod_seq.nextval, 'Outer', 'JACKET', '자켓7', 'jacket_7.webp', 54000, 540, 'new', 'Color<br>
+beige / khaki<br><br>Fabric<br>cotton 100%<br><br>Size<br>어깨57 가슴63.5 암홀27 소매단면26 소매길이55.5 총장75<br><br>Info<br>
+비침없음/ 신축성없음/ 촉감보드라움/ 두께적당함/ 안감있음<br>');
+
+insert into product(pnum,pcode,pcate,pname,pimage,price,point,pspec,pnote) 
+values(prod_seq.nextval, 'Outer', 'JACKET', '자켓8', 'jacket_8.webp', 38000, 380, 'new', 'Color<br>
+beige / khaki<br><br>Fabric<br>cotton 100%<br><br>Size<br>어깨57 가슴63.5 암홀27 소매단면26 소매길이55.5 총장75<br><br>Info<br>
+비침없음/ 신축성없음/ 촉감보드라움/ 두께적당함/ 안감있음<br>');
+
+
+
+
+--Top/TEE
+insert into product(pnum,pcode,pcate,pname,pimage,price,point,pspec,pnote) 
+values(prod_seq.nextval, 'Top', 'TEE', '티셔츠1', 'tee_1.webp', 18000, 180, 'new', 'Color<br>
+beige / khaki<br><br>Fabric<br>cotton 100%<br><br>Size<br>어깨57 가슴63.5 암홀27 소매단면26 소매길이55.5 총장75<br><br>Info<br>
+비침없음/ 신축성없음/ 촉감보드라움/ 두께적당함/ 안감있음<br>');
+
+insert into product(pnum,pcode,pcate,pname,pimage,price,point,pspec,pnote) 
+values(prod_seq.nextval, 'Top', 'TEE', '티셔츠2', 'tee_2.webp', 28000, 280, 'new', 'Color<br>
+beige / khaki<br><br>Fabric<br>cotton 100%<br><br>Size<br>어깨57 가슴63.5 암홀27 소매단면26 소매길이55.5 총장75<br><br>Info<br>
+비침없음/ 신축성없음/ 촉감보드라움/ 두께적당함/ 안감있음<br>');
+
+insert into product(pnum,pcode,pcate,pname,pimage,price,point,pspec,pnote) 
+values(prod_seq.nextval, 'Top', 'TEE', '티셔츠3', 'tee_3.webp', 38000, 380, 'new', 'Color<br>
+beige / khaki<br><br>Fabric<br>cotton 100%<br><br>Size<br>어깨57 가슴63.5 암홀27 소매단면26 소매길이55.5 총장75<br><br>Info<br>
+비침없음/ 신축성없음/ 촉감보드라움/ 두께적당함/ 안감있음<br>');
+
+insert into product(pnum,pcode,pcate,pname,pimage,price,point,pspec,pnote) 
+values(prod_seq.nextval, 'Top', 'TEE', '티셔츠4', 'tee_4.webp', 19000, 190, 'new', 'Color<br>
+beige / khaki<br><br>Fabric<br>cotton 100%<br><br>Size<br>어깨57 가슴63.5 암홀27 소매단면26 소매길이55.5 총장75<br><br>Info<br>
+비침없음/ 신축성없음/ 촉감보드라움/ 두께적당함/ 안감있음<br>');
+
+insert into product(pnum,pcode,pcate,pname,pimage,price,point,pspec,pnote) 
+values(prod_seq.nextval, 'Top', 'TEE', '티셔츠5', 'tee_5.webp', 21000, 210, 'best', 'Color<br>
+beige / khaki<br><br>Fabric<br>cotton 100%<br><br>Size<br>어깨57 가슴63.5 암홀27 소매단면26 소매길이55.5 총장75<br><br>Info<br>
+비침없음/ 신축성없음/ 촉감보드라움/ 두께적당함/ 안감있음<br>');
+
+insert into product(pnum,pcode,pcate,pname,pimage,price,point,pspec,pnote) 
+values(prod_seq.nextval, 'Top', 'TEE', '티셔츠6', 'tee_6.webp', 22000, 220, 'best', 'Color<br>
+beige / khaki<br><br>Fabric<br>cotton 100%<br><br>Size<br>어깨57 가슴63.5 암홀27 소매단면26 소매길이55.5 총장75<br><br>Info<br>
+비침없음/ 신축성없음/ 촉감보드라움/ 두께적당함/ 안감있음<br>');
+
+insert into product(pnum,pcode,pcate,pname,pimage,price,point,pspec,pnote) 
+values(prod_seq.nextval, 'Top', 'TEE', '티셔츠7', 'tee_7.webp', 18000, 180, 'best', 'Color<br>
+beige / khaki<br><br>Fabric<br>cotton 100%<br><br>Size<br>어깨57 가슴63.5 암홀27 소매단면26 소매길이55.5 총장75<br><br>Info<br>
+비침없음/ 신축성없음/ 촉감보드라움/ 두께적당함/ 안감있음<br>');
+
+insert into product(pnum,pcode,pcate,pname,pimage,price,point,pspec,pnote) 
+values(prod_seq.nextval, 'Top', 'TEE', '티셔츠8', 'tee_8.webp', 17000, 170, 'best', 'Color<br>
+beige / khaki<br><br>Fabric<br>cotton 100%<br><br>Size<br>어깨57 가슴63.5 암홀27 소매단면26 소매길이55.5 총장75<br><br>Info<br>
+비침없음/ 신축성없음/ 촉감보드라움/ 두께적당함/ 안감있음<br>');
+
+
+--Top/KNIT
+insert into product(pnum,pcode,pcate,pname,pimage,price,point,pspec,pnote) 
+values(prod_seq.nextval, 'Top', 'KNIT', '니트1', 'knit_1.webp', 17000, 170, 'best', 'Color<br>
+beige / khaki<br><br>Fabric<br>cotton 100%<br><br>Size<br>어깨57 가슴63.5 암홀27 소매단면26 소매길이55.5 총장75<br><br>Info<br>
+비침없음/ 신축성없음/ 촉감보드라움/ 두께적당함/ 안감있음<br>');
+
+insert into product(pnum,pcode,pcate,pname,pimage,price,point,pspec,pnote) 
+values(prod_seq.nextval, 'Top', 'KNIT', '니트2', 'knit_2.webp', 27000, 270, 'best', 'Color<br>
+beige / khaki<br><br>Fabric<br>cotton 100%<br><br>Size<br>어깨57 가슴63.5 암홀27 소매단면26 소매길이55.5 총장75<br><br>Info<br>
+비침없음/ 신축성없음/ 촉감보드라움/ 두께적당함/ 안감있음<br>');
+
+insert into product(pnum,pcode,pcate,pname,pimage,price,point,pspec,pnote) 
+values(prod_seq.nextval, 'Top', 'KNIT', '니트3', 'knit_3.webp', 37000, 370, 'best', 'Color<br>
+beige / khaki<br><br>Fabric<br>cotton 100%<br><br>Size<br>어깨57 가슴63.5 암홀27 소매단면26 소매길이55.5 총장75<br><br>Info<br>
+비침없음/ 신축성없음/ 촉감보드라움/ 두께적당함/ 안감있음<br>');
+
+insert into product(pnum,pcode,pcate,pname,pimage,price,point,pspec,pnote) 
+values(prod_seq.nextval, 'Top', 'KNIT', '니트4', 'knit_4.webp', 47000, 470, 'best', 'Color<br>
+beige / khaki<br><br>Fabric<br>cotton 100%<br><br>Size<br>어깨57 가슴63.5 암홀27 소매단면26 소매길이55.5 총장75<br><br>Info<br>
+비침없음/ 신축성없음/ 촉감보드라움/ 두께적당함/ 안감있음<br>');
+
+insert into product(pnum,pcode,pcate,pname,pimage,price,point,pspec,pnote) 
+values(prod_seq.nextval, 'Top', 'KNIT', '니트5', 'knit_5.webp', 29000, 290, 'new', 'Color<br>
+beige / khaki<br><br>Fabric<br>cotton 100%<br><br>Size<br>어깨57 가슴63.5 암홀27 소매단면26 소매길이55.5 총장75<br><br>Info<br>
+비침없음/ 신축성없음/ 촉감보드라움/ 두께적당함/ 안감있음<br>');
+
+insert into product(pnum,pcode,pcate,pname,pimage,price,point,pspec,pnote) 
+values(prod_seq.nextval, 'Top', 'KNIT', '니트6', 'knit_6.webp', 32000, 320, 'new', 'Color<br>
+beige / khaki<br><br>Fabric<br>cotton 100%<br><br>Size<br>어깨57 가슴63.5 암홀27 소매단면26 소매길이55.5 총장75<br><br>Info<br>
+비침없음/ 신축성없음/ 촉감보드라움/ 두께적당함/ 안감있음<br>');
+
+insert into product(pnum,pcode,pcate,pname,pimage,price,point,pspec,pnote) 
+values(prod_seq.nextval, 'Top', 'KNIT', '니트7', 'knit_7.webp', 21000, 210, 'new', 'Color<br>
+beige / khaki<br><br>Fabric<br>cotton 100%<br><br>Size<br>어깨57 가슴63.5 암홀27 소매단면26 소매길이55.5 총장75<br><br>Info<br>
+비침없음/ 신축성없음/ 촉감보드라움/ 두께적당함/ 안감있음<br>');
+
+insert into product(pnum,pcode,pcate,pname,pimage,price,point,pspec,pnote) 
+values(prod_seq.nextval, 'Top', 'KNIT', '니트8', 'knit_8.webp', 33000, 330, 'new', 'Color<br>
+beige / khaki<br><br>Fabric<br>cotton 100%<br><br>Size<br>어깨57 가슴63.5 암홀27 소매단면26 소매길이55.5 총장75<br><br>Info<br>
+비침없음/ 신축성없음/ 촉감보드라움/ 두께적당함/ 안감있음<br>');
+
+
+--Top/SWEATSHIRT/HOODY
+insert into product(pnum,pcode,pcate,pname,pimage,price,point,pspec,pnote) 
+values(prod_seq.nextval, 'Top', 'SWEATSHIRT/HOODY', '후드1', 'hoody_1.webp', 33000, 330, 'new', 'Color<br>
+beige / khaki<br><br>Fabric<br>cotton 100%<br><br>Size<br>어깨57 가슴63.5 암홀27 소매단면26 소매길이55.5 총장75<br><br>Info<br>
+비침없음/ 신축성없음/ 촉감보드라움/ 두께적당함/ 안감있음<br>');
+
+insert into product(pnum,pcode,pcate,pname,pimage,price,point,pspec,pnote) 
+values(prod_seq.nextval, 'Top', 'SWEATSHIRT/HOODY', '후드2', 'hoody_2.webp', 43000, 430, 'new', 'Color<br>
+beige / khaki<br><br>Fabric<br>cotton 100%<br><br>Size<br>어깨57 가슴63.5 암홀27 소매단면26 소매길이55.5 총장75<br><br>Info<br>
+비침없음/ 신축성없음/ 촉감보드라움/ 두께적당함/ 안감있음<br>');
+
+insert into product(pnum,pcode,pcate,pname,pimage,price,point,pspec,pnote) 
+values(prod_seq.nextval, 'Top', 'SWEATSHIRT/HOODY', '후드3', 'hoody_3.webp', 35000, 350, 'best', 'Color<br>
+beige / khaki<br><br>Fabric<br>cotton 100%<br><br>Size<br>어깨57 가슴63.5 암홀27 소매단면26 소매길이55.5 총장75<br><br>Info<br>
+비침없음/ 신축성없음/ 촉감보드라움/ 두께적당함/ 안감있음<br>');
+
+insert into product(pnum,pcode,pcate,pname,pimage,price,point,pspec,pnote) 
+values(prod_seq.nextval, 'Top', 'SWEATSHIRT/HOODY', '후드4', 'hoody_4.webp', 46000, 460, 'new', 'Color<br>
+beige / khaki<br><br>Fabric<br>cotton 100%<br><br>Size<br>어깨57 가슴63.5 암홀27 소매단면26 소매길이55.5 총장75<br><br>Info<br>
+비침없음/ 신축성없음/ 촉감보드라움/ 두께적당함/ 안감있음<br>');
+
+insert into product(pnum,pcode,pcate,pname,pimage,price,point,pspec,pnote) 
+values(prod_seq.nextval, 'Top', 'SWEATSHIRT/HOODY', '후드5', 'hoody_5.gif', 37000, 370, 'best', 'Color<br>
+beige / khaki<br><br>Fabric<br>cotton 100%<br><br>Size<br>어깨57 가슴63.5 암홀27 소매단면26 소매길이55.5 총장75<br><br>Info<br>
+비침없음/ 신축성없음/ 촉감보드라움/ 두께적당함/ 안감있음<br>');
+
+
+
+--Blouse/BLOUSE
+insert into product(pnum,pcode,pcate,pname,pimage,price,point,pspec,pnote) 
+values(prod_seq.nextval, 'Blouse', 'BLOUSE', '블라우스1', 'blouse_1.webp', 26000, 260, 'new', 'Color<br>
+beige / khaki<br><br>Fabric<br>cotton 100%<br><br>Size<br>어깨57 가슴63.5 암홀27 소매단면26 소매길이55.5 총장75<br><br>Info<br>
+비침없음/ 신축성없음/ 촉감보드라움/ 두께적당함/ 안감있음<br>');
+
+insert into product(pnum,pcode,pcate,pname,pimage,price,point,pspec,pnote) 
+values(prod_seq.nextval, 'Blouse', 'BLOUSE', '블라우스2', 'blouse_2.webp', 28000, 280, 'new', 'Color<br>
+beige / khaki<br><br>Fabric<br>cotton 100%<br><br>Size<br>어깨57 가슴63.5 암홀27 소매단면26 소매길이55.5 총장75<br><br>Info<br>
+비침없음/ 신축성없음/ 촉감보드라움/ 두께적당함/ 안감있음<br>');
+
+insert into product(pnum,pcode,pcate,pname,pimage,price,point,pspec,pnote) 
+values(prod_seq.nextval, 'Blouse', 'BLOUSE', '블라우스3', 'blouse_3.webp', 26000, 260, 'new', 'Color<br>
+beige / khaki<br><br>Fabric<br>cotton 100%<br><br>Size<br>어깨57 가슴63.5 암홀27 소매단면26 소매길이55.5 총장75<br><br>Info<br>
+비침없음/ 신축성없음/ 촉감보드라움/ 두께적당함/ 안감있음<br>');
+
+insert into product(pnum,pcode,pcate,pname,pimage,price,point,pspec,pnote) 
+values(prod_seq.nextval, 'Blouse', 'BLOUSE', '블라우스4', 'blouse_4.webp', 25000, 250, 'new', 'Color<br>
+beige / khaki<br><br>Fabric<br>cotton 100%<br><br>Size<br>어깨57 가슴63.5 암홀27 소매단면26 소매길이55.5 총장75<br><br>Info<br>
+비침없음/ 신축성없음/ 촉감보드라움/ 두께적당함/ 안감있음<br>');
+
+insert into product(pnum,pcode,pcate,pname,pimage,price,point,pspec,pnote) 
+values(prod_seq.nextval, 'Blouse', 'BLOUSE', '블라우스5', 'blouse_5.webp', 26000, 260, 'best', 'Color<br>
+beige / khaki<br><br>Fabric<br>cotton 100%<br><br>Size<br>어깨57 가슴63.5 암홀27 소매단면26 소매길이55.5 총장75<br><br>Info<br>
+비침없음/ 신축성없음/ 촉감보드라움/ 두께적당함/ 안감있음<br>');
+
+insert into product(pnum,pcode,pcate,pname,pimage,price,point,pspec,pnote) 
+values(prod_seq.nextval, 'Blouse', 'BLOUSE', '블라우스6', 'blouse_6.webp', 24000, 240, 'best', 'Color<br>
+beige / khaki<br><br>Fabric<br>cotton 100%<br><br>Size<br>어깨57 가슴63.5 암홀27 소매단면26 소매길이55.5 총장75<br><br>Info<br>
+비침없음/ 신축성없음/ 촉감보드라움/ 두께적당함/ 안감있음<br>');
+
+insert into product(pnum,pcode,pcate,pname,pimage,price,point,pspec,pnote) 
+values(prod_seq.nextval, 'Blouse', 'BLOUSE', '블라우스7', 'blouse_7.webp', 36000, 360, 'best', 'Color<br>
+beige / khaki<br><br>Fabric<br>cotton 100%<br><br>Size<br>어깨57 가슴63.5 암홀27 소매단면26 소매길이55.5 총장75<br><br>Info<br>
+비침없음/ 신축성없음/ 촉감보드라움/ 두께적당함/ 안감있음<br>');
+
+insert into product(pnum,pcode,pcate,pname,pimage,price,point,pspec,pnote) 
+values(prod_seq.nextval, 'Blouse', 'BLOUSE', '블라우스8', 'blouse_8.webp', 37000, 370, 'best', 'Color<br>
+beige / khaki<br><br>Fabric<br>cotton 100%<br><br>Size<br>어깨57 가슴63.5 암홀27 소매단면26 소매길이55.5 총장75<br><br>Info<br>
+비침없음/ 신축성없음/ 촉감보드라움/ 두께적당함/ 안감있음<br>');
+
+
+--Blouse/SHIRT
+insert into product(pnum,pcode,pcate,pname,pimage,price,point,pspec,pnote) 
+values(prod_seq.nextval, 'Blouse', 'SHIRT', '셔츠1', 'shirt_1.webp', 23000, 230, 'best', 'Color<br>
+beige / khaki<br><br>Fabric<br>cotton 100%<br><br>Size<br>어깨57 가슴63.5 암홀27 소매단면26 소매길이55.5 총장75<br><br>Info<br>
+비침없음/ 신축성없음/ 촉감보드라움/ 두께적당함/ 안감있음<br>');
+
+insert into product(pnum,pcode,pcate,pname,pimage,price,point,pspec,pnote) 
+values(prod_seq.nextval, 'Blouse', 'SHIRT', '셔츠2', 'shirt_2.webp', 22000, 220, 'best', 'Color<br>
+beige / khaki<br><br>Fabric<br>cotton 100%<br><br>Size<br>어깨57 가슴63.5 암홀27 소매단면26 소매길이55.5 총장75<br><br>Info<br>
+비침없음/ 신축성없음/ 촉감보드라움/ 두께적당함/ 안감있음<br>');
+
+insert into product(pnum,pcode,pcate,pname,pimage,price,point,pspec,pnote) 
+values(prod_seq.nextval, 'Blouse', 'SHIRT', '셔츠3', 'shirt_3.webp', 33000, 330, 'best', 'Color<br>
+beige / khaki<br><br>Fabric<br>cotton 100%<br><br>Size<br>어깨57 가슴63.5 암홀27 소매단면26 소매길이55.5 총장75<br><br>Info<br>
+비침없음/ 신축성없음/ 촉감보드라움/ 두께적당함/ 안감있음<br>');
+
+insert into product(pnum,pcode,pcate,pname,pimage,price,point,pspec,pnote) 
+values(prod_seq.nextval, 'Blouse', 'SHIRT', '셔츠4', 'shirt_4.webp', 43000, 430, 'best', 'Color<br>
+beige / khaki<br><br>Fabric<br>cotton 100%<br><br>Size<br>어깨57 가슴63.5 암홀27 소매단면26 소매길이55.5 총장75<br><br>Info<br>
+비침없음/ 신축성없음/ 촉감보드라움/ 두께적당함/ 안감있음<br>');
+
+insert into product(pnum,pcode,pcate,pname,pimage,price,point,pspec,pnote) 
+values(prod_seq.nextval, 'Blouse', 'SHIRT', '셔츠5', 'shirt_5.webp', 22000, 220, 'new', 'Color<br>
+beige / khaki<br><br>Fabric<br>cotton 100%<br><br>Size<br>어깨57 가슴63.5 암홀27 소매단면26 소매길이55.5 총장75<br><br>Info<br>
+비침없음/ 신축성없음/ 촉감보드라움/ 두께적당함/ 안감있음<br>');
+
+insert into product(pnum,pcode,pcate,pname,pimage,price,point,pspec,pnote) 
+values(prod_seq.nextval, 'Blouse', 'SHIRT', '셔츠6', 'shirt_6.webp', 23000, 230, 'new', 'Color<br>
+beige / khaki<br><br>Fabric<br>cotton 100%<br><br>Size<br>어깨57 가슴63.5 암홀27 소매단면26 소매길이55.5 총장75<br><br>Info<br>
+비침없음/ 신축성없음/ 촉감보드라움/ 두께적당함/ 안감있음<br>');
+
+insert into product(pnum,pcode,pcate,pname,pimage,price,point,pspec,pnote) 
+values(prod_seq.nextval, 'Blouse', 'SHIRT', '셔츠7', 'shirt_7.webp', 28000, 280, 'new', 'Color<br>
+beige / khaki<br><br>Fabric<br>cotton 100%<br><br>Size<br>어깨57 가슴63.5 암홀27 소매단면26 소매길이55.5 총장75<br><br>Info<br>
+비침없음/ 신축성없음/ 촉감보드라움/ 두께적당함/ 안감있음<br>');
+
+insert into product(pnum,pcode,pcate,pname,pimage,price,point,pspec,pnote) 
+values(prod_seq.nextval, 'Blouse', 'SHIRT', '셔츠8', 'shirt_8.webp', 35000, 350, 'new', 'Color<br>
+beige / khaki<br><br>Fabric<br>cotton 100%<br><br>Size<br>어깨57 가슴63.5 암홀27 소매단면26 소매길이55.5 총장75<br><br>Info<br>
+비침없음/ 신축성없음/ 촉감보드라움/ 두께적당함/ 안감있음<br>');
+
+
+--Bottom/DENIM
+insert into product(pnum,pcode,pcate,pname,pimage,price,point,pspec,pnote) 
+values(prod_seq.nextval, 'Bottom', 'DENIM', '데님1', 'denim_1.webp', 30000, 300, 'new', 'Color<br>
+beige / khaki<br><br>Fabric<br>cotton 100%<br><br>Size<br>어깨57 가슴63.5 암홀27 소매단면26 소매길이55.5 총장75<br><br>Info<br>
+비침없음/ 신축성없음/ 촉감보드라움/ 두께적당함/ 안감있음<br>');
+
+insert into product(pnum,pcode,pcate,pname,pimage,price,point,pspec,pnote) 
+values(prod_seq.nextval, 'Bottom', 'DENIM', '데님2', 'denim_2.webp', 33000, 330, 'new', 'Color<br>
+beige / khaki<br><br>Fabric<br>cotton 100%<br><br>Size<br>어깨57 가슴63.5 암홀27 소매단면26 소매길이55.5 총장75<br><br>Info<br>
+비침없음/ 신축성없음/ 촉감보드라움/ 두께적당함/ 안감있음<br>');
+
+insert into product(pnum,pcode,pcate,pname,pimage,price,point,pspec,pnote) 
+values(prod_seq.nextval, 'Bottom', 'DENIM', '데님3', 'denim_3.webp', 30000, 300, 'new', 'Color<br>
+beige / khaki<br><br>Fabric<br>cotton 100%<br><br>Size<br>어깨57 가슴63.5 암홀27 소매단면26 소매길이55.5 총장75<br><br>Info<br>
+비침없음/ 신축성없음/ 촉감보드라움/ 두께적당함/ 안감있음<br>');
+
+insert into product(pnum,pcode,pcate,pname,pimage,price,point,pspec,pnote) 
+values(prod_seq.nextval, 'Bottom', 'DENIM', '데님4', 'denim_4.webp', 31000, 310, 'new', 'Color<br>
+beige / khaki<br><br>Fabric<br>cotton 100%<br><br>Size<br>어깨57 가슴63.5 암홀27 소매단면26 소매길이55.5 총장75<br><br>Info<br>
+비침없음/ 신축성없음/ 촉감보드라움/ 두께적당함/ 안감있음<br>');
+
+insert into product(pnum,pcode,pcate,pname,pimage,price,point,pspec,pnote) 
+values(prod_seq.nextval, 'Bottom', 'DENIM', '데님5', 'denim_5.webp', 41000, 410, 'best', 'Color<br>
+beige / khaki<br><br>Fabric<br>cotton 100%<br><br>Size<br>어깨57 가슴63.5 암홀27 소매단면26 소매길이55.5 총장75<br><br>Info<br>
+비침없음/ 신축성없음/ 촉감보드라움/ 두께적당함/ 안감있음<br>');
+
+insert into product(pnum,pcode,pcate,pname,pimage,price,point,pspec,pnote) 
+values(prod_seq.nextval, 'Bottom', 'DENIM', '데님6', 'denim_6.webp', 39000, 390, 'best', 'Color<br>
+beige / khaki<br><br>Fabric<br>cotton 100%<br><br>Size<br>어깨57 가슴63.5 암홀27 소매단면26 소매길이55.5 총장75<br><br>Info<br>
+비침없음/ 신축성없음/ 촉감보드라움/ 두께적당함/ 안감있음<br>');
+
+insert into product(pnum,pcode,pcate,pname,pimage,price,point,pspec,pnote) 
+values(prod_seq.nextval, 'Bottom', 'DENIM', '데님7', 'denim_7.webp', 32000, 320, 'best', 'Color<br>
+beige / khaki<br><br>Fabric<br>cotton 100%<br><br>Size<br>어깨57 가슴63.5 암홀27 소매단면26 소매길이55.5 총장75<br><br>Info<br>
+비침없음/ 신축성없음/ 촉감보드라움/ 두께적당함/ 안감있음<br>');
+
+insert into product(pnum,pcode,pcate,pname,pimage,price,point,pspec,pnote) 
+values(prod_seq.nextval, 'Bottom', 'DENIM', '데님8', 'denim_8.webp', 31000, 310, 'best', 'Color<br>
+beige / khaki<br><br>Fabric<br>cotton 100%<br><br>Size<br>어깨57 가슴63.5 암홀27 소매단면26 소매길이55.5 총장75<br><br>Info<br>
+비침없음/ 신축성없음/ 촉감보드라움/ 두께적당함/ 안감있음<br>');
+
+
+
+--Bottom/SHORTS
+insert into product(pnum,pcode,pcate,pname,pimage,price,point,pspec,pnote) 
+values(prod_seq.nextval, 'Bottom', 'SHORTS', '반바지1', 'shorts_1.webp', 28000, 280, 'best', 'Color<br>
+beige / khaki<br><br>Fabric<br>cotton 100%<br><br>Size<br>어깨57 가슴63.5 암홀27 소매단면26 소매길이55.5 총장75<br><br>Info<br>
+비침없음/ 신축성없음/ 촉감보드라움/ 두께적당함/ 안감있음<br>');
+
+insert into product(pnum,pcode,pcate,pname,pimage,price,point,pspec,pnote) 
+values(prod_seq.nextval, 'Bottom', 'SHORTS', '반바지2', 'shorts_2.webp', 33000, 330, 'best', 'Color<br>
+beige / khaki<br><br>Fabric<br>cotton 100%<br><br>Size<br>어깨57 가슴63.5 암홀27 소매단면26 소매길이55.5 총장75<br><br>Info<br>
+비침없음/ 신축성없음/ 촉감보드라움/ 두께적당함/ 안감있음<br>');
+
+insert into product(pnum,pcode,pcate,pname,pimage,price,point,pspec,pnote) 
+values(prod_seq.nextval, 'Bottom', 'SHORTS', '반바지3', 'shorts_3.webp', 31000, 310, 'best', 'Color<br>
+beige / khaki<br><br>Fabric<br>cotton 100%<br><br>Size<br>어깨57 가슴63.5 암홀27 소매단면26 소매길이55.5 총장75<br><br>Info<br>
+비침없음/ 신축성없음/ 촉감보드라움/ 두께적당함/ 안감있음<br>');
+
+insert into product(pnum,pcode,pcate,pname,pimage,price,point,pspec,pnote) 
+values(prod_seq.nextval, 'Bottom', 'SHORTS', '반바지4', 'shorts_4.webp', 38000, 380, 'best', 'Color<br>
+beige / khaki<br><br>Fabric<br>cotton 100%<br><br>Size<br>어깨57 가슴63.5 암홀27 소매단면26 소매길이55.5 총장75<br><br>Info<br>
+비침없음/ 신축성없음/ 촉감보드라움/ 두께적당함/ 안감있음<br>');
+
+insert into product(pnum,pcode,pcate,pname,pimage,price,point,pspec,pnote) 
+values(prod_seq.nextval, 'Bottom', 'SHORTS', '반바지5', 'shorts_5.webp', 41000, 410, 'new', 'Color<br>
+beige / khaki<br><br>Fabric<br>cotton 100%<br><br>Size<br>어깨57 가슴63.5 암홀27 소매단면26 소매길이55.5 총장75<br><br>Info<br>
+비침없음/ 신축성없음/ 촉감보드라움/ 두께적당함/ 안감있음<br>');
+
+insert into product(pnum,pcode,pcate,pname,pimage,price,point,pspec,pnote) 
+values(prod_seq.nextval, 'Bottom', 'SHORTS', '반바지6', 'shorts_6.webp', 35000, 350, 'new', 'Color<br>
+beige / khaki<br><br>Fabric<br>cotton 100%<br><br>Size<br>어깨57 가슴63.5 암홀27 소매단면26 소매길이55.5 총장75<br><br>Info<br>
+비침없음/ 신축성없음/ 촉감보드라움/ 두께적당함/ 안감있음<br>');
+
+insert into product(pnum,pcode,pcate,pname,pimage,price,point,pspec,pnote) 
+values(prod_seq.nextval, 'Bottom', 'SHORTS', '반바지7', 'shorts_7.webp', 39000, 390, 'new', 'Color<br>
+beige / khaki<br><br>Fabric<br>cotton 100%<br><br>Size<br>어깨57 가슴63.5 암홀27 소매단면26 소매길이55.5 총장75<br><br>Info<br>
+비침없음/ 신축성없음/ 촉감보드라움/ 두께적당함/ 안감있음<br>');
+
+insert into product(pnum,pcode,pcate,pname,pimage,price,point,pspec,pnote) 
+values(prod_seq.nextval, 'Bottom', 'SHORTS', '반바지8', 'shorts_8.webp', 31000, 310, 'new', 'Color<br>
+beige / khaki<br><br>Fabric<br>cotton 100%<br><br>Size<br>어깨57 가슴63.5 암홀27 소매단면26 소매길이55.5 총장75<br><br>Info<br>
+비침없음/ 신축성없음/ 촉감보드라움/ 두께적당함/ 안감있음<br>');
+
+
+
+
+
+--Dress/MINI
+insert into product(pnum,pcode,pcate,pname,pimage,price,point,pspec,pnote) 
+values(prod_seq.nextval, 'Dress', 'MINI', '미니드레스1', 'mini_1.webp', 37000, 370, 'new', 'Color<br>
+beige / khaki<br><br>Fabric<br>cotton 100%<br><br>Size<br>어깨57 가슴63.5 암홀27 소매단면26 소매길이55.5 총장75<br><br>Info<br>
+비침없음/ 신축성없음/ 촉감보드라움/ 두께적당함/ 안감있음<br>');
+
+insert into product(pnum,pcode,pcate,pname,pimage,price,point,pspec,pnote) 
+values(prod_seq.nextval, 'Dress', 'MINI', '미니드레스2', 'mini_2.gif', 35000, 350, 'new', 'Color<br>
+beige / khaki<br><br>Fabric<br>cotton 100%<br><br>Size<br>어깨57 가슴63.5 암홀27 소매단면26 소매길이55.5 총장75<br><br>Info<br>
+비침없음/ 신축성없음/ 촉감보드라움/ 두께적당함/ 안감있음<br>');
+
+insert into product(pnum,pcode,pcate,pname,pimage,price,point,pspec,pnote) 
+values(prod_seq.nextval, 'Dress', 'MINI', '미니드레스3', 'mini_3.gif', 21000, 210, 'new', 'Color<br>
+beige / khaki<br><br>Fabric<br>cotton 100%<br><br>Size<br>어깨57 가슴63.5 암홀27 소매단면26 소매길이55.5 총장75<br><br>Info<br>
+비침없음/ 신축성없음/ 촉감보드라움/ 두께적당함/ 안감있음<br>');
+
+insert into product(pnum,pcode,pcate,pname,pimage,price,point,pspec,pnote) 
+values(prod_seq.nextval, 'Dress', 'MINI', '미니드레스4', 'mini_4.gif', 29000, 290, 'best', 'Color<br>
+beige / khaki<br><br>Fabric<br>cotton 100%<br><br>Size<br>어깨57 가슴63.5 암홀27 소매단면26 소매길이55.5 총장75<br><br>Info<br>
+비침없음/ 신축성없음/ 촉감보드라움/ 두께적당함/ 안감있음<br>');
+
+insert into product(pnum,pcode,pcate,pname,pimage,price,point,pspec,pnote) 
+values(prod_seq.nextval, 'Dress', 'MINI', '미니드레스5', 'mini_5.gif', 32000, 320, 'best', 'Color<br>
+beige / khaki<br><br>Fabric<br>cotton 100%<br><br>Size<br>어깨57 가슴63.5 암홀27 소매단면26 소매길이55.5 총장75<br><br>Info<br>
+비침없음/ 신축성없음/ 촉감보드라움/ 두께적당함/ 안감있음<br>');
+
+insert into product(pnum,pcode,pcate,pname,pimage,price,point,pspec,pnote) 
+values(prod_seq.nextval, 'Dress', 'MINI', '미니드레스6', 'mini_6.gif', 31000, 310, 'best', 'Color<br>
+beige / khaki<br><br>Fabric<br>cotton 100%<br><br>Size<br>어깨57 가슴63.5 암홀27 소매단면26 소매길이55.5 총장75<br><br>Info<br>
+비침없음/ 신축성없음/ 촉감보드라움/ 두께적당함/ 안감있음<br>');
+
+
+--Dress/LONG
+insert into product(pnum,pcode,pcate,pname,pimage,price,point,pspec,pnote) 
+values(prod_seq.nextval, 'Dress', 'LONG', '롱드레스1', 'long_1.webp', 37000, 370, 'new', 'Color<br>
+beige / khaki<br><br>Fabric<br>cotton 100%<br><br>Size<br>어깨57 가슴63.5 암홀27 소매단면26 소매길이55.5 총장75<br><br>Info<br>
+비침없음/ 신축성없음/ 촉감보드라움/ 두께적당함/ 안감있음<br>');
+
+insert into product(pnum,pcode,pcate,pname,pimage,price,point,pspec,pnote) 
+values(prod_seq.nextval, 'Dress', 'LONG', '롱드레스2', 'long_2.webp', 35000, 350, 'new', 'Color<br>
+beige / khaki<br><br>Fabric<br>cotton 100%<br><br>Size<br>어깨57 가슴63.5 암홀27 소매단면26 소매길이55.5 총장75<br><br>Info<br>
+비침없음/ 신축성없음/ 촉감보드라움/ 두께적당함/ 안감있음<br>');
+
+insert into product(pnum,pcode,pcate,pname,pimage,price,point,pspec,pnote) 
+values(prod_seq.nextval, 'Dress', 'LONG', '롱드레스3', 'long_3.webp', 21000, 210, 'new', 'Color<br>
+beige / khaki<br><br>Fabric<br>cotton 100%<br><br>Size<br>어깨57 가슴63.5 암홀27 소매단면26 소매길이55.5 총장75<br><br>Info<br>
+비침없음/ 신축성없음/ 촉감보드라움/ 두께적당함/ 안감있음<br>');
+
+insert into product(pnum,pcode,pcate,pname,pimage,price,point,pspec,pnote) 
+values(prod_seq.nextval, 'Dress', 'LONG', '롱드레스4', 'long_4.webp', 29000, 290, 'best', 'Color<br>
+beige / khaki<br><br>Fabric<br>cotton 100%<br><br>Size<br>어깨57 가슴63.5 암홀27 소매단면26 소매길이55.5 총장75<br><br>Info<br>
+비침없음/ 신축성없음/ 촉감보드라움/ 두께적당함/ 안감있음<br>');
+
+insert into product(pnum,pcode,pcate,pname,pimage,price,point,pspec,pnote) 
+values(prod_seq.nextval, 'Dress', 'LONG', '롱드레스5', 'long_5.webp', 32000, 320, 'best', 'Color<br>
+beige / khaki<br><br>Fabric<br>cotton 100%<br><br>Size<br>어깨57 가슴63.5 암홀27 소매단면26 소매길이55.5 총장75<br><br>Info<br>
+비침없음/ 신축성없음/ 촉감보드라움/ 두께적당함/ 안감있음<br>');
+
+insert into product(pnum,pcode,pcate,pname,pimage,price,point,pspec,pnote) 
+values(prod_seq.nextval, 'Dress', 'LONG', '롱드레스6', 'long_6.webp', 31000, 310, 'best', 'Color<br>
+beige / khaki<br><br>Fabric<br>cotton 100%<br><br>Size<br>어깨57 가슴63.5 암홀27 소매단면26 소매길이55.5 총장75<br><br>Info<br>
+비침없음/ 신축성없음/ 촉감보드라움/ 두께적당함/ 안감있음<br>');
+
+
+--Skirt/MINI
+insert into product(pnum,pcode,pcate,pname,pimage,price,point,pspec,pnote) 
+values(prod_seq.nextval, 'Skirt', 'MINI', '미니스커트1', 'miniskirt_1.webp', 37000, 370, 'new', 'Color<br>
+beige / khaki<br><br>Fabric<br>cotton 100%<br><br>Size<br>어깨57 가슴63.5 암홀27 소매단면26 소매길이55.5 총장75<br><br>Info<br>
+비침없음/ 신축성없음/ 촉감보드라움/ 두께적당함/ 안감있음<br>');
+
+insert into product(pnum,pcode,pcate,pname,pimage,price,point,pspec,pnote) 
+values(prod_seq.nextval, 'Skirt', 'MINI', '미니스커트2', 'miniskirt_2.webp', 35000, 350, 'new', 'Color<br>
+beige / khaki<br><br>Fabric<br>cotton 100%<br><br>Size<br>어깨57 가슴63.5 암홀27 소매단면26 소매길이55.5 총장75<br><br>Info<br>
+비침없음/ 신축성없음/ 촉감보드라움/ 두께적당함/ 안감있음<br>');
+
+insert into product(pnum,pcode,pcate,pname,pimage,price,point,pspec,pnote) 
+values(prod_seq.nextval, 'Skirt', 'MINI', '미니스커트3', 'miniskirt_3.webp', 21000, 210, 'new', 'Color<br>
+beige / khaki<br><br>Fabric<br>cotton 100%<br><br>Size<br>어깨57 가슴63.5 암홀27 소매단면26 소매길이55.5 총장75<br><br>Info<br>
+비침없음/ 신축성없음/ 촉감보드라움/ 두께적당함/ 안감있음<br>');
+
+insert into product(pnum,pcode,pcate,pname,pimage,price,point,pspec,pnote) 
+values(prod_seq.nextval, 'Skirt', 'MINI', '미니스커트4', 'miniskirt_4.webp', 29000, 290, 'best', 'Color<br>
+beige / khaki<br><br>Fabric<br>cotton 100%<br><br>Size<br>어깨57 가슴63.5 암홀27 소매단면26 소매길이55.5 총장75<br><br>Info<br>
+비침없음/ 신축성없음/ 촉감보드라움/ 두께적당함/ 안감있음<br>');
+
+insert into product(pnum,pcode,pcate,pname,pimage,price,point,pspec,pnote) 
+values(prod_seq.nextval, 'Skirt', 'MINI', '미니스커트5', 'miniskirt_5.webp', 32000, 320, 'best', 'Color<br>
+beige / khaki<br><br>Fabric<br>cotton 100%<br><br>Size<br>어깨57 가슴63.5 암홀27 소매단면26 소매길이55.5 총장75<br><br>Info<br>
+비침없음/ 신축성없음/ 촉감보드라움/ 두께적당함/ 안감있음<br>');
+
+insert into product(pnum,pcode,pcate,pname,pimage,price,point,pspec,pnote) 
+values(prod_seq.nextval, 'Skirt', 'MINI', '미니스커트6', 'miniskirt_6.webp', 31000, 310, 'best', 'Color<br>
+beige / khaki<br><br>Fabric<br>cotton 100%<br><br>Size<br>어깨57 가슴63.5 암홀27 소매단면26 소매길이55.5 총장75<br><br>Info<br>
+비침없음/ 신축성없음/ 촉감보드라움/ 두께적당함/ 안감있음<br>');
+
+insert into product(pnum,pcode,pcate,pname,pimage,price,point,pspec,pnote) 
+values(prod_seq.nextval, 'Skirt', 'MINI', '미니스커트7', 'miniskirt_7.gif', 33000, 330, 'new', 'Color<br>
+beige / khaki<br><br>Fabric<br>cotton 100%<br><br>Size<br>어깨57 가슴63.5 암홀27 소매단면26 소매길이55.5 총장75<br><br>Info<br>
+비침없음/ 신축성없음/ 촉감보드라움/ 두께적당함/ 안감있음<br>');
+
+insert into product(pnum,pcode,pcate,pname,pimage,price,point,pspec,pnote) 
+values(prod_seq.nextval, 'Skirt', 'MINI', '미니스커트8', 'miniskirt_7.gif', 35000, 350, 'best', 'Color<br>
+beige / khaki<br><br>Fabric<br>cotton 100%<br><br>Size<br>어깨57 가슴63.5 암홀27 소매단면26 소매길이55.5 총장75<br><br>Info<br>
+비침없음/ 신축성없음/ 촉감보드라움/ 두께적당함/ 안감있음<br>');
+
+
+
+--Skirt/LONG
+insert into product(pnum,pcode,pcate,pname,pimage,price,point,pspec,pnote) 
+values(prod_seq.nextval, 'Skirt', 'LONG', '롱스커트1', 'longskirt_1.webp', 37000, 370, 'new', 'Color<br>
+beige / khaki<br><br>Fabric<br>cotton 100%<br><br>Size<br>어깨57 가슴63.5 암홀27 소매단면26 소매길이55.5 총장75<br><br>Info<br>
+비침없음/ 신축성없음/ 촉감보드라움/ 두께적당함/ 안감있음<br>');
+
+insert into product(pnum,pcode,pcate,pname,pimage,price,point,pspec,pnote) 
+values(prod_seq.nextval, 'Skirt', 'LONG', '롱스커트2', 'longskirt_2.webp', 35000, 350, 'new', 'Color<br>
+beige / khaki<br><br>Fabric<br>cotton 100%<br><br>Size<br>어깨57 가슴63.5 암홀27 소매단면26 소매길이55.5 총장75<br><br>Info<br>
+비침없음/ 신축성없음/ 촉감보드라움/ 두께적당함/ 안감있음<br>');
+
+insert into product(pnum,pcode,pcate,pname,pimage,price,point,pspec,pnote) 
+values(prod_seq.nextval, 'Skirt', 'LONG', '롱스커트3', 'longskirt_3.webp', 21000, 210, 'new', 'Color<br>
+beige / khaki<br><br>Fabric<br>cotton 100%<br><br>Size<br>어깨57 가슴63.5 암홀27 소매단면26 소매길이55.5 총장75<br><br>Info<br>
+비침없음/ 신축성없음/ 촉감보드라움/ 두께적당함/ 안감있음<br>');
+
+insert into product(pnum,pcode,pcate,pname,pimage,price,point,pspec,pnote) 
+values(prod_seq.nextval, 'Skirt', 'LONG', '롱스커트4', 'longskirt_4.webp', 29000, 290, 'best', 'Color<br>
+beige / khaki<br><br>Fabric<br>cotton 100%<br><br>Size<br>어깨57 가슴63.5 암홀27 소매단면26 소매길이55.5 총장75<br><br>Info<br>
+비침없음/ 신축성없음/ 촉감보드라움/ 두께적당함/ 안감있음<br>');
+
+insert into product(pnum,pcode,pcate,pname,pimage,price,point,pspec,pnote) 
+values(prod_seq.nextval, 'Skirt', 'LONG', '롱스커트5', 'longskirt_5.webp', 32000, 320, 'best', 'Color<br>
+beige / khaki<br><br>Fabric<br>cotton 100%<br><br>Size<br>어깨57 가슴63.5 암홀27 소매단면26 소매길이55.5 총장75<br><br>Info<br>
+비침없음/ 신축성없음/ 촉감보드라움/ 두께적당함/ 안감있음<br>');
+
+insert into product(pnum,pcode,pcate,pname,pimage,price,point,pspec,pnote) 
+values(prod_seq.nextval, 'Skirt', 'LONG', '롱스커트6', 'longskirt_6.webp', 31000, 310, 'best', 'Color<br>
+beige / khaki<br><br>Fabric<br>cotton 100%<br><br>Size<br>어깨57 가슴63.5 암홀27 소매단면26 소매길이55.5 총장75<br><br>Info<br>
+비침없음/ 신축성없음/ 촉감보드라움/ 두께적당함/ 안감있음<br>');
+
+insert into product(pnum,pcode,pcate,pname,pimage,price,point,pspec,pnote) 
+values(prod_seq.nextval, 'Skirt', 'LONG', '롱스커트7', 'longskirt_7.webp', 37000, 370, 'new', 'Color<br>
+beige / khaki<br><br>Fabric<br>cotton 100%<br><br>Size<br>어깨57 가슴63.5 암홀27 소매단면26 소매길이55.5 총장75<br><br>Info<br>
+비침없음/ 신축성없음/ 촉감보드라움/ 두께적당함/ 안감있음<br>');
+
+insert into product(pnum,pcode,pcate,pname,pimage,price,point,pspec,pnote) 
+values(prod_seq.nextval, 'Skirt', 'LONG', '롱스커트8', 'longskirt_8.webp', 41000, 410, 'best', 'Color<br>
+beige / khaki<br><br>Fabric<br>cotton 100%<br><br>Size<br>어깨57 가슴63.5 암홀27 소매단면26 소매길이55.5 총장75<br><br>Info<br>
+비침없음/ 신축성없음/ 촉감보드라움/ 두께적당함/ 안감있음<br>');
+
+
+--Shoes/ALL
+
+insert into product(pnum,pcode,pcate,pname,pimage,price,point,pspec,pnote) 
+values(prod_seq.nextval, 'Shoes', 'ALL', '신발1', 'shoes_1.jpg', 41000, 410, 'best', 'Color<br>
+beige / khaki<br><br>Fabric<br>cotton 100%<br><br>Size<br>어깨57 가슴63.5 암홀27 소매단면26 소매길이55.5 총장75<br><br>Info<br>
+비침없음/ 신축성없음/ 촉감보드라움/ 두께적당함/ 안감있음<br>');
+
+insert into product(pnum,pcode,pcate,pname,pimage,price,point,pspec,pnote) 
+values(prod_seq.nextval, 'Shoes', 'ALL', '신발2', 'shoes_2.jpg', 39000, 390, 'best', 'Color<br>
+beige / khaki<br><br>Fabric<br>cotton 100%<br><br>Size<br>어깨57 가슴63.5 암홀27 소매단면26 소매길이55.5 총장75<br><br>Info<br>
+비침없음/ 신축성없음/ 촉감보드라움/ 두께적당함/ 안감있음<br>');
+
+insert into product(pnum,pcode,pcate,pname,pimage,price,point,pspec,pnote) 
+values(prod_seq.nextval, 'Shoes', 'ALL', '신발3', 'shoes_3.jpg', 51000, 510, 'new', 'Color<br>
+beige / khaki<br><br>Fabric<br>cotton 100%<br><br>Size<br>어깨57 가슴63.5 암홀27 소매단면26 소매길이55.5 총장75<br><br>Info<br>
+비침없음/ 신축성없음/ 촉감보드라움/ 두께적당함/ 안감있음<br>');
+
+insert into product(pnum,pcode,pcate,pname,pimage,price,point,pspec,pnote) 
+values(prod_seq.nextval, 'Shoes', 'ALL', '신발4', 'shoes_4.jpg', 45000, 450, 'new', 'Color<br>
+beige / khaki<br><br>Fabric<br>cotton 100%<br><br>Size<br>어깨57 가슴63.5 암홀27 소매단면26 소매길이55.5 총장75<br><br>Info<br>
+비침없음/ 신축성없음/ 촉감보드라움/ 두께적당함/ 안감있음<br>');
+
+-----------------------------------------------------------------------------------------
+--재고/색상 인서트
+insert into productDetail(dnum,pnum,pcode,pname,psize,pcolor,pstock)
+values(detail_seq.nextval, 1001, 'Outer', '패이보릿 보색야상', 'S', '검정', 999);
+insert into productDetail(dnum,pnum,pcode,pname,psize,pcolor,pstock)
+values(detail_seq.nextval, 1001, 'Outer', '패이보릿 보색야상', 'M', '검정', 999);
+insert into productDetail(dnum,pnum,pcode,pname,psize,pcolor,pstock)
+values(detail_seq.nextval, 1001, 'Outer', '패이보릿 보색야상', 'L', '검정', 999);
+insert into productDetail(dnum,pnum,pcode,pname,psize,pcolor,pstock)
+values(detail_seq.nextval, 1001, 'Outer', '패이보릿 보색야상', 'S', '린넨베이지', 999);
+insert into productDetail(dnum,pnum,pcode,pname,psize,pcolor,pstock)
+values(detail_seq.nextval, 1001, 'Outer', '패이보릿 보색야상', 'M', '린넨베이지', 999);
+insert into productDetail(dnum,pnum,pcode,pname,psize,pcolor,pstock)
+values(detail_seq.nextval, 1001, 'Outer', '패이보릿 보색야상', 'L', '네이비', 999);
+insert into productDetail(dnum,pnum,pcode,pname,psize,pcolor,pstock)
+values(detail_seq.nextval, 1001, 'Outer', '패이보릿 보색야상', 'XL', '네이비', 999);
+insert into productDetail(dnum,pnum,pcode,pname,psize,pcolor,pstock)
+values(detail_seq.nextval, 1001, 'Outer', '패이보릿 보색야상', 'XL', '레드', 999);
+
+
+
+insert into productDetail(dnum,pnum,pcode,pname,psize,pcolor,pstock)
+values(detail_seq.nextval, 1002, 'Outer', '니트 블루종 ', 'S', '검정', 999);
+insert into productDetail(dnum,pnum,pcode,pname,psize,pcolor,pstock)
+values(detail_seq.nextval, 1002, 'Outer', '니트 블루종 ', 'M', '검정', 999);
+insert into productDetail(dnum,pnum,pcode,pname,psize,pcolor,pstock)
+values(detail_seq.nextval, 1002, 'Outer', '니트 블루종 ', 'L', '검정', 999);
+insert into productDetail(dnum,pnum,pcode,pname,psize,pcolor,pstock)
+values(detail_seq.nextval, 1002, 'Outer', '니트 블루종 ', 'S', '린넨베이지', 999);
+insert into productDetail(dnum,pnum,pcode,pname,psize,pcolor,pstock)
+values(detail_seq.nextval, 1002, 'Outer', '니트 블루종 ', 'M', '린넨베이지', 999);
+insert into productDetail(dnum,pnum,pcode,pname,psize,pcolor,pstock)
+values(detail_seq.nextval, 1002, 'Outer', '니트 블루종 ', 'L', '네이비', 999);
+insert into productDetail(dnum,pnum,pcode,pname,psize,pcolor,pstock)
+values(detail_seq.nextval, 1002, 'Outer', '니트 블루종 ', 'XL', '네이비', 999);
+insert into productDetail(dnum,pnum,pcode,pname,psize,pcolor,pstock)
+values(detail_seq.nextval, 1002, 'Outer', '니트 블루종 ', 'XL', '레드', 999);
+
+
+insert into productDetail(dnum,pnum,pcode,pname,psize,pcolor,pstock)
+values(detail_seq.nextval, 1003, 'Outer', '샌드 블루종 ', 'S', '검정', 999);
+insert into productDetail(dnum,pnum,pcode,pname,psize,pcolor,pstock)
+values(detail_seq.nextval, 1003, 'Outer', '샌드 블루종 ', 'M', '검정', 999);
+insert into productDetail(dnum,pnum,pcode,pname,psize,pcolor,pstock)
+values(detail_seq.nextval, 1003, 'Outer', '샌드 블루종 ', 'L', '검정', 999);
+insert into productDetail(dnum,pnum,pcode,pname,psize,pcolor,pstock)
+values(detail_seq.nextval, 1003, 'Outer', '샌드 블루종 ', 'S', '린넨베이지', 999);
+insert into productDetail(dnum,pnum,pcode,pname,psize,pcolor,pstock)
+values(detail_seq.nextval, 1003, 'Outer', '샌드 블루종 ', 'M', '린넨베이지', 999);
+insert into productDetail(dnum,pnum,pcode,pname,psize,pcolor,pstock)
+values(detail_seq.nextval, 1003, 'Outer', '샌드 블루종 ', 'L', '네이비', 999);
+insert into productDetail(dnum,pnum,pcode,pname,psize,pcolor,pstock)
+values(detail_seq.nextval, 1003, 'Outer', '샌드 블루종 ', 'XL', '네이비', 999);
+insert into productDetail(dnum,pnum,pcode,pname,psize,pcolor,pstock)
+values(detail_seq.nextval, 1003, 'Outer', '샌드 블루종 ', 'XL', '레드', 999);
+
+
+
+
+
+insert into productDetail(dnum,pnum,pcode,pname,psize,pcolor,pstock)
+values(detail_seq.nextval, 1004, 'Outer', '오트 블루종 ', 'S', '검정', 999);
+insert into productDetail(dnum,pnum,pcode,pname,psize,pcolor,pstock)
+values(detail_seq.nextval, 1004, 'Outer', '오트 블루종 ', 'M', '검정', 999);
+insert into productDetail(dnum,pnum,pcode,pname,psize,pcolor,pstock)
+values(detail_seq.nextval, 1004, 'Outer', '오트 블루종 ', 'L', '검정', 999);
+insert into productDetail(dnum,pnum,pcode,pname,psize,pcolor,pstock)
+values(detail_seq.nextval, 1004, 'Outer', '오트 블루종 ', 'S', '린넨베이지', 999);
+insert into productDetail(dnum,pnum,pcode,pname,psize,pcolor,pstock)
+values(detail_seq.nextval, 1004, 'Outer', '오트 블루종 ', 'M', '린넨베이지', 999);
+insert into productDetail(dnum,pnum,pcode,pname,psize,pcolor,pstock)
+values(detail_seq.nextval, 1004, 'Outer', '오트 블루종 ', 'L', '네이비', 999);
+insert into productDetail(dnum,pnum,pcode,pname,psize,pcolor,pstock)
+values(detail_seq.nextval, 1004, 'Outer', '오트 블루종 ', 'XL', '네이비', 999);
+insert into productDetail(dnum,pnum,pcode,pname,psize,pcolor,pstock)
+values(detail_seq.nextval, 1004, 'Outer', '오트 블루종 ', 'XL', '레드', 999);
+
+
+
+

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="admin.model.ProductDetail">
+	<insert id="InsertDetail">
+		insert into productDetail(dnum,pnum,pcode,pname,psize,pcolor,pstock) 
+		values(detail_seq.nextval,#{pnum},#{pcode},#{pname},#{psize},#{pcolor},#{pstock})
+	</insert>
+	
+	<select id="GetDetailList" resultType="MyProductDetail" >
+		select * from productdetail
+			<if test="whatColumn=='pnum'">
+				where pnum like #{keyword} 
+			</if>
+			<if test="whatColumn=='pname'">
+				where pname like #{keyword} 
+			</if>
+		order by pnum desc
+	</select>
+	
+	<select id="GetTotalCount" resultType="int" parameterType="hashmap">
+		select count(*) from productdetail
+		<if test="whatColumn == 'pnum'">
+			where pnum like #{keyword}
+		</if>
+		<if test="whatColumn == 'pname'">
+			where pname like #{keyword}
+		</if>
+	</select>
+	
+	<delete id="DeleteProductDetail">
+		delete from productdetail where dnum = #{dnum}
+	</delete>
+	
+	<select id="GetOneProductDetail" resultType="MyProductDetail">
+		select * from productdetail where dnum = #{dnum}
+	</select>
+	
+	<update id="UpdateProductDetail">
+		update productdetail set pstock = #{pstock} where dnum= #{dnum}
+	</update>
+	
+	<select id="GetProductsByPnum" resultType="MyProductDetail">
+		select * from productdetail where pnum = #{pnum} 
+	</select>
+
+	<select id="GetDistinctColor" resultType="MyProductDetail">
+		select distinct pcolor from productdetail where pnum = #{pnum} 
+	</select>
+
+	<select id="GetProductSize" resultType="MyProductDetail">
+		select psize,pstock from productdetail where pnum = #{pnum} and pcolor = #{pcolor} 
+	</select>
+	
+	<select id="GetStock" resultType="MyProductDetail">  
+		select pstock,dnum from productdetail
+		where pname = #{pname} and pcolor = #{pcolor} and psize = #{psize} 
+	</select>
+	
+	<select id="GetOneCart" resultType="MyProductDetail">
+      select dnum from productdetail
+      where pname=#{pname} and pcolor=#{pcolor} and psize=#{psize}
+   </select>
+   
+   <select id="GetOneDnum" resultType="MyProductDetail">
+      select pstock from productdetail
+      where dnum=#{dnum}
+   </select>
+   
+   <update id="UpdatePstock">
+      update productdetail set pstock = #{pstock} where dnum = #{dnum} 
+   </update>
+	
+</mapper>
+

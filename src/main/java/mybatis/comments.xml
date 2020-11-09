@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+<mapper namespace="board.model.BoardComments">
+    <insert id="InsertComments">
+       insert into comments(cnum,crecom,cname,cdate,ccnum) 
+       values(cseq.nextval,#{crecom},#{cname},sysdate,#{cnum})
+    </insert>
+    
+    <select id="SelectComments" resultType="MyBoardComments">
+       select * from comments where ccnum = #{cnum}
+    </select>
+    
+    <update id="UpdateCom">
+       update comments set crecom = #{crecom}, cname = #{cname}  where ccnum = #{cnum}
+    </update>
+</mapper>

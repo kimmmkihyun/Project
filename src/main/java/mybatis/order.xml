@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="order.model.Order" >
+	
+	<insert id="InsertNewPstock">
+      insert into orderlist(olnum,dnum,mid,pname,pimage,price,oqty)
+      values(ol_seq.nextval,#{dnum},#{mid},#{pname},#{pimage},#{price},#{oqty})
+   </insert>
+	
+	<select id="GetOrder" resultType="MyOrder">
+      select * from orderlist where mid = #{mid} order by olnum asc
+   </select>
+   
+   <select id="GetAll" resultType="MyOrder">
+   	select * from orderlist
+   </select>
+</mapper>
+
+

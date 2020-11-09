@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="admin.model.ProductDetail">
+	<insert id="InsertDetail">
+		insert into productDetail(dnum,pnum,pcode,pname,psize,pcolor,pstock) 
+		values(detail_seq.nextval,#{pnum},#{pcode},#{pname},#{psize},#{pcolor},#{pstock})
+	</insert>
+	
+	<select id="GetDetailList" resultType="MyProductDetail" >
+		select * from productdetail
+			<if test="whatColumn=='pnum'">
+				where pnum like #{keyword} 
+			</if>
+			<if test="whatColumn=='pname'">
+				where pname like #{keyword} 
+			</if>
+		order by pnum desc
+	</select>
+	
+	<select id="GetTotalCount" resultType="int" parameterType="hashmap">
+		select count(*) from productdetail
+		<if test="whatColumn == 'pnum'">
+			where pnum like #{keyword}
+		</if>
+		<if test="whatColumn == 'pname'">
+			where pname like #{keyword}
+		</if>
+	</select>
+	
+	<delete id="DeleteProductDetail">
+		delete from productdetail where dnum = #{dnum}
+	</delete>
+	
+	<select id="GetOneProductDetail" resultType="MyProductDetail">
+		select * from productdetail where dnum = #{dnum}
+	</select>
+	
+	<update id="UpdateProductDetail">
+		update productdetail set pstock = #{pstock} where dnum= #{dnum}
+	</update>
+</mapper>
+

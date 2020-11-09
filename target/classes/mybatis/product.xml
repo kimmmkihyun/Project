@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="admin.model.Product">
+   
+   <insert id="InsertProduct">
+      insert into product(pnum,pcode,pcate,pname,pimage,price,point,pspec,pnote,pinputdate)
+      values(prod_seq.nextval,#{pcode},#{pcate},#{pname},#{pimage},#{price},#{point},#{pspec},#{pnote},sysdate)
+   </insert>
+   
+   <select id="GetTotalCount" resultType="int" parameterType="hashmap">
+      select count(*) from product
+      <if test="whatColumn == 'pnum'">
+         where pnum like #{keyword}
+      </if>
+      <if test="whatColumn == 'pname'">
+         where pname like #{keyword}
+      </if>
+   </select>
+   
+   <select id="GetProductList" resultType="MyProduct">
+      select * from product
+         <if test="whatColumn=='pnum'">
+            where pnum like #{keyword} 
+         </if>
+         <if test="whatColumn=='pname'">
+            where pname like #{keyword} 
+         </if>
+      order by pnum desc
+   </select>
+   
+   <select id="GetOneProduct" resultType="MyProduct">
+      select * from product where pnum = #{pnum}
+   </select>
+   
+   <delete id="DeleteProduct">
+      delete from product where pnum = #{pnum}
+   </delete>
+   
+   <update id="UpdateProduct">
+      update product set pcode = #{pcode}, pcate = #{pcate},pname = #{pname},pimage = #{pimage},price = #{price},
+      point = #{point}, pspec= #{pspec}, pnote = #{pnote} 
+      where pnum = #{pnum}
+   </update>
+   <select id="GetNewProduct" resultType="MyProduct">
+      select * from product where pspec = 'new' 
+   </select>
+   
+   <select id = "GetByCateOuter" resultType="MyProduct">
+      select * from product where pcode = 'Outer'
+   </select>
+   
+   <select id = "GetByCateTop" resultType="MyProduct">
+      select * from product where pcode = 'Top'
+   </select>
+   
+   <select id = "GetByCateBlouse" resultType="MyProduct">
+      select * from product where pcode = 'Blouse'
+   </select>
+   
+   <select id = "GetByCateBottom" resultType="MyProduct">
+      select * from product where pcode = 'Bottom'
+   </select>
+   
+   <select id = "GetByCateDress" resultType="MyProduct">
+      select * from product where pcode = 'Dress'
+   </select>
+   
+   <select id = "GetByCateSkirt" resultType="MyProduct">
+      select * from product where pcode = 'Skirt'
+   </select>
+   
+   <select id = "GetByCateShoes" resultType="MyProduct">
+      select * from product where pcode = 'Shoes'
+   </select>
+   
+   <select id = "GetByCateBag" resultType="MyProduct">
+      select * from product where pcode = 'Bag'
+   </select>
+   
+   <select id = "GetByCateAcc" resultType="MyProduct">
+      select * from product where pcode = 'Acc'
+   </select>
+   
+   <!-- 버튼에 들어가는 글씨 lists2 -->
+   <select id="GetByPcode" resultType="MyProduct">
+      select pcate,pcode from product group by pcate,pcode having pcode = #{pcode}
+   </select>
+   <!-- 사진정보 불러오는거  lists -->
+   <select id="GetByPcate" resultType="MyProduct">
+      select * from product where pcate = #{pcate}
+   </select>
+   <!--검색 기능  -->
+   <select id="SearchProduct" resultType="MyProduct">
+      select * from product where pname like #{keyword}
+   </select>
+   
+    <select id="GetBestProduct" resultType="MyProduct">
+      select * from product where pspec = 'best' 
+   </select>
+
+</mapper>
