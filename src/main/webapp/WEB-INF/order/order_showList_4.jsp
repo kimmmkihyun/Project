@@ -82,9 +82,8 @@
    </div>
 </c:if>
             <!--    
-            
             	색상 사이즈 넘겨 받아서 해당되는 dnum에 맞게 되야 한다 !!!!
-            
+            	어떻게 받아야 할지 생각해보자!!
               -->
             <c:if test="${ fn:length(lists) != 0}">
                <c:forEach var="show" items="${ lists }">
