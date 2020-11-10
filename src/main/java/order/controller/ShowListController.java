@@ -33,31 +33,29 @@ public class ShowListController {
     @RequestMapping(command)
     public ModelAndView doAction(HttpSession session) {
    
-   String mid = (String)session.getAttribute("loginInfo2");
-   List<Order> lists = orderDao.getAll();
-   System.out.println(lists.size());
-   
-   List<Order> lists2 = new ArrayList<Order>();
-   
-   List<ProductDetail> lists3 = new ArrayList<ProductDetail>();
-   int dnum = 0 ;
-   for(int i=0;i<lists.size();i++) {
-       lists2 = orderDao.getOrder(mid); 
-       dnum =  lists2.get(i).getDnum();
-       System.out.println("dnum!!!!!!!! : " +dnum);
-       lists3 =  productDetailDao.getOneDnum(dnum);
-   }
+    	String mid = (String)session.getAttribute("loginInfo2");
+   //   List<Order> lists = orderDao.getAll();
+   //   System.out.println(lists.size());
+   //   
+   //   List<Order> lists2 = new ArrayList<Order>();
+   //   
+   //   List<ProductDetail> lists3 = new ArrayList<ProductDetail>();
+   //   int dnum = 0 ;
+   //   for(int i=0;i<lists.size();i++) {
+//         lists2 = orderDao.getOrder(mid); 
+//          dnum =  lists2.get(i).getDnum();
+//          System.out.println("dnum!!!!!!!! : " +dnum);
+//          lists3 =  productDetailDao.getOption(dnum);
+   //   }
 
-//   List<Order> lists = orderDao.getOrder(mid);    아이디로 결제내역 가지고옴!!!!
-   
-   ModelAndView mav = new ModelAndView();
-   
-   mav.addObject("lists", lists); 
-   mav.addObject("lists2", lists2); 
-   mav.addObject("lists3", lists3); 
+      List<Order> lists = orderDao.getOrder(mid); 
+      
+      ModelAndView mav = new ModelAndView();
+      
+      mav.addObject("lists", lists); 
 
-   mav.setViewName(getPage);
-   return mav;
+      mav.setViewName(getPage);
+      return mav;
     }
        
 }

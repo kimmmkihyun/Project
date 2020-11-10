@@ -87,7 +87,7 @@
             
               -->
             <c:if test="${ fn:length(lists) != 0}">
-               <c:forEach var="show" items="${ lists2 }">
+               <c:forEach var="show" items="${ lists }">
                    
                <tr>
                   <td style="vertical-align: middle;">${show.olnum }</td>

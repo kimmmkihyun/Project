@@ -1,53 +1,76 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
    pageEncoding="UTF-8"%>
-<%@include file="common.jsp"%>   
+<%@include file="common.jsp"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
-<title> /WEB-INF/user/user_productDetail.jsp</title>
+<title>/WEB-INF/user/user_productDetail.jsp</title>
 <style type="text/css">
-   .user_content {
-      margin-top: 200px;
-      padding-left: 15vw;
-      padding-right: 15vw;
-      padding-top: 5vh;
-   }
+.user_content {
+   margin-top: 200px;
+   padding-left: 15vw;
+   padding-right: 15vw;
+   padding-top: 5vh;
+}
+
+#btn {
+   border: 1px solid #000;
+   width: 16vw;
+}
+
+#card-body {
+   padding-left: 100px;
+   padding-right: 100px;
+}
+
+.span_area {
+   float: left;
+   width: 30%
+}
+
+.select_area {
+   float: left;
+   width: 70%
+}
+
+.select_area select {
+   height: 39px;
+   width: 70%
+}
+
+.span_area p {
+   font-size: 20px;
+}
+
+.product_result, .buy_btn {
+   float: left;
+   width: 100%
+}
+
+.card-title {
+   text-align: left;
+}
+
+.price-text {
+   padding-top: 8px;
+}
+
+.price-text span {
+   font-size: 15px;
+}
+
+#selectSize {
    
-   #btn{
-      border: 1px solid #000;
-      width: 16vw;
-   }
-   
-   #card-body{
-      padding-left: 100px;
-      padding-right: 100px;
-   
-   }
-   .span_area {float:left; width:30%}
-   .select_area{float:left; width:70%}
-   .select_area select{height:39px; width:70%}
-   .span_area p{
-      font-size: 20px;
-   }
-   .product_result, .buy_btn{float:left; width:100%}
-   .card-title{text-align:left;}
-   
-   .price-text{
-      padding-top: 8px;
-   }
-   .price-text span{
-      font-size: 15px;
-   }
-   #selectSize{
-         
-   }
-   .pnote-text{
-   		font: 15px;
-   		color: gray;
-   }
+}
+
+.pnote-text {
+   font: 15px;
+   color: gray;
+}
 </style>
-<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script type="text/javascript"
+   src="https://code.jquery.com/jquery-3.4.1.js"></script>
 <script type="text/javascript">
 
    $(document).ready(function(){
@@ -244,7 +267,6 @@
      
       //console.log("totalSum:"+totalSum);  
       
-      
    }
 
    function goCart(pnum){
@@ -257,108 +279,157 @@
          qty += parseInt( $(".num").eq(i).val() ) + ","    
          } 
       console.log("qty:"+qty);
+      if(login == "admin"){
+         alert("관리자 주문불가");
+         location.href="";
+      }
+      else {
+         ($("#selectColor option:selected").val().includes("선택") || $("#selectSize option:selected").val().includes("선택"))
+            alert("필수 옵션을 선택해 주세요");  
       
-      if($("#selectColor option:selected").val().includes("선택") || $("#selectSize option:selected").val().includes("선택")){
-         alert("필수 옵션을 선택해 주세요");  
-      }else{
          if(login == "" || login == null || login == "null"){
                location.href="loginForm.me?pnum="+pnum; 
             }else{
-               location.href="cartlist.cart?pset="+pset+"&pnum="+pnum+"&qty="+qty;
-            }
+               var con = confirm("장바구니에 담으시겠습니까?");
+               if(con == true){
+                  location.href="cartlist.cart?pset="+pset+"&pnum="+pnum+"&qty="+qty;
+                  var con2 = confirm("주문 하시겠습니까?");
+                  if(con2 == true){
+                     location.href="cartlist.cart?pset="+pset+"&pnum="+pnum+"&qty="+qty;
+                  }
+                  else{
+                     location.href="";
+                  }
+               }
+               else{
+                  location.href="";
+               }
+            }//else
+      }
         
       }
+   
+   
+   function goOrder(pnum){
+       console.log("goCart_pset:"+$('.aa').text());
+         let pset = $('.aa').text();
+         var login = $(".loginInfo22").val();
+         let qty = "";
+         for(let i=0; i< $("tr[class='bb']").length ; ++i){
+            qty += parseInt( $(".num").eq(i).val() ) + ","    
+            } 
+         console.log("qty:"+qty);
+         
+         if(login == "admin"){
+              alert("관리자 주문불가");
+               location.href="";
+         }
+         else {
+            ($("#selectColor option:selected").val().includes("선택") || $("#selectSize option:selected").val().includes("선택"))
+               alert("필수 옵션을 선택해 주세요");  
+           
+         if(login == "" || login == null || login == "null"){
+                  location.href="loginForm.me?pnum="+pnum; 
+         
+         }else{
+                  location.href="cartlist.cart?pset="+pset+"&pnum="+pnum+"&qty="+qty;
+               }
+           
+         }
+         
    }
 
 
 </script>
 </head>
 <body>
-  <%@include file="user_top_4.jsp"%>
-   
+   <%@include file="user_top_4.jsp"%>
+
    <div class="user_content">
       <!-- 유저 컨텐트 내용 -->
-       <input type="hidden" class="loginInfo22" value=<%=session.getAttribute("loginInfo2") %>>
-      <div class="card mb-3" style="max-width: 85vw;"> 
-            <input type="hidden" name="pnum" value="${product.pnum }">
-            <input type="hidden" name="lists_size" value="${sizeLists.get(0).psize }">
+      <input type="hidden" class="loginInfo22"
+         value=<%=session.getAttribute("loginInfo2")%>>
+      <div class="card mb-3" style="max-width: 85vw;">
+         <input type="hidden" name="pnum" value="${product.pnum }"> <input
+            type="hidden" name="lists_size" value="${sizeLists.get(0).psize }">
          <div class="row no-gutters">
-            <div class="col-md-4"> 
-                <img src="<%=request.getContextPath() %>/resources/${product.pimage }" class="card-img" alt="..." >
+            <div class="col-md-4">
+               <img
+                  src="<%=request.getContextPath() %>/resources/${product.pimage }"
+                  class="card-img" alt="...">
             </div>
             <div class="col-md-8">
                <div class="card-body" id="card-body">
                   <h4 class="card-title">
                      <B>${product.pname }</B>
                   </h4>
-               <div class="pnote-text">
-                     <span>
-                           ${product.pnote }  
-                     </span>
-                    <hr>
-                     </div>
-                     
-                  
-                  <div class="price-text">
-						<p>판매가                 
-                 
-                        ￦<span >
-                             ${product.price }  
-                     </span>
+                  <div class="pnote-text">
+                     <span> ${product.pnote } </span>
+                     <hr>
                   </div>
-                  <hr>  
+
+
+                  <div class="price-text">
+                     <p>
+                        판매가 ￦<span> ${product.price } </span>
+                  </div>
+                  <hr>
                   <div class="card-text">
-                     
+
                      <div class="span_area">
-                        <p>재고수량 </p> 
-                        <p>색상 </p> 
-                        <p>사이즈 </p>
+                        <p>재고수량</p>
+                        <p>색상</p>
+                        <p>사이즈</p>
                      </div>
                      <form>
                         <%-- <input type="hidden" name="pcolor" value="${colorLists.color }"> --%>
                      </form>
 
                      <div class="select_area">
-                        <p>  
-                           <input type="button" value="실시간재고 확인하기" onclick="popupStock(${product.pnum })"/>
+                        <p>
+                           <input type="button" value="실시간재고 확인하기"
+                              onclick="popupStock(${product.pnum })" />
                         </p>
                         <p>
-                        <select name="selectColor" id="selectColor">
-                        <option>선택</option>
-                           <c:forEach var="bean" items="${ colorLists }"> 
-                              <option><c:out value="${bean.pcolor }" /></option>                              
-                           </c:forEach>                           
-                        </select>
+                           <select name="selectColor" id="selectColor">
+                              <option>선택</option>
+                              <c:forEach var="bean" items="${ colorLists }">
+                                 <option><c:out value="${bean.pcolor }" /></option>
+                              </c:forEach>
+                           </select>
                         </p>
                         <p>
-                        <select id="selectSize" onChange="showResult()">
-                           <option class="choi" >선택</option>                                                      
-                        </select>
+                           <select id="selectSize" onChange="showResult()">
+                              <option class="choi">선택</option>
+                           </select>
                         </p>
                      </div>
-                     
-                  </div>   
-                  <div class="product_result">
-                    <table class="table" id="resultTable">
-                       <tr>
-                          <td>상세</td>
-                          <td>수량</td>
-                          <td>금액</td>
-                          <td>삭제</td>
-                       </tr>
-                    </table>
+
                   </div>
-                 <span>총 : </span> 
-                  <div class="totalCount"></div>
-                  
-               <div class="buy_btn">  
-                  <button type="button" class="btn btn-light" id="btn">BUY IT NOW</button>
-                  <button type="button" class="btn btn-light" id="btn" style="margin-left: 20px;" onclick="goCart(${product.pnum })">ADD TO CART</button>
-               </div>
+                  <div class="product_result">
+                     <table class="table" id="resultTable">
+                        <tr>
+                           <td>상세</td>
+                           <td>수량</td>
+                           <td>금액</td>
+                           <td>삭제</td>
+                        </tr>
+                     </table>
+                  </div>
+                  총금액: ￦<span class="totalCount"></span>원
+
+                  <div class="buy_btn">
+                     <button type="button" class="btn btn-light" id="btn"
+                        onclick="goOrder(${product.pnum })">BUY IT NOW</button>
+                     <button type="button" class="btn btn-light" id="btn"
+                        style="margin-left: 20px;" onclick="goCart(${product.pnum })">ADD
+                        TO CART</button>
+                  </div>
                </div>
             </div>
          </div>
       </div>
    </div>
+   <%@include file="user_bot.jsp"%>
 </body>
 </html>

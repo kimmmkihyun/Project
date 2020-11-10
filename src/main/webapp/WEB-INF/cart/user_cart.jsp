@@ -82,6 +82,11 @@ tbody {
          location.href="orderAll.od?";      
       
    }
+   
+   function goStartPage(){
+      alert("시작 페이지로 돌아갑니다.");
+      location.href="user.uspage";
+   }
 
 </script>
 
@@ -165,7 +170,7 @@ tbody {
                         <button type="button" class="btn btn-light"
                            onclick="deleteCart(${carts.cartnum })">삭제</button>
                      </td>
-                  </tr>
+                  </tr>  
                </tbody>
             </c:forEach>
          </table>
@@ -198,12 +203,13 @@ tbody {
                   <td colspan="3">
                      <button type="button" class="btn btn-primary cbtn" onclick="orderAll()">전체상품주문</button>
                      &nbsp;
-                     <button type="button" class="btn btn-secondary cbtn">쇼핑계속하기</button>
+                     <button type="button" class="btn btn-secondary cbtn" onclick="goStartPage()">쇼핑계속하기</button>
                   </td>
                </tr>
             </tbody>
          </table>
       </div>
    </div>
+<%@include file="../user/user_bot.jsp"%>
 </body>
 </html>

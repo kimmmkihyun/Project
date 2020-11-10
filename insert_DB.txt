@@ -687,5 +687,5 @@ insert into productDetail(dnum,pnum,pcode,pname,psize,pcolor,pstock)
 values(detail_seq.nextval, 1004, 'Outer', '오트 블루종 ', 'XL', '레드', 999);
 
 
-
+commit;
 
