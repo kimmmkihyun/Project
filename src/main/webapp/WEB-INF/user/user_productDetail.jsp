@@ -284,12 +284,16 @@
          location.href="";
       }
       else {
-         ($("#selectColor option:selected").val().includes("선택") || $("#selectSize option:selected").val().includes("선택"))
+         
+         if($("#selectColor option:selected").val().includes("선택") || $("#selectSize option:selected").val().includes("선택")){
+            
             alert("필수 옵션을 선택해 주세요");  
+         }
       
-         if(login == "" || login == null || login == "null"){
+         else if(login == "" || login == null || login == "null"){
+                alert("로그인을 해주세요.");
                location.href="loginForm.me?pnum="+pnum; 
-            }else{
+          }else{
                var con = confirm("장바구니에 담으시겠습니까?");
                if(con == true){
                   location.href="cartlist.cart?pset="+pset+"&pnum="+pnum+"&qty="+qty;
@@ -325,16 +329,18 @@
                location.href="";
          }
          else {
-            ($("#selectColor option:selected").val().includes("선택") || $("#selectSize option:selected").val().includes("선택"))
+             if($("#selectColor option:selected").val().includes("선택") || $("#selectSize option:selected").val().includes("선택")){
                alert("필수 옵션을 선택해 주세요");  
+             }
            
-         if(login == "" || login == null || login == "null"){
-                  location.href="loginForm.me?pnum="+pnum; 
-         
-         }else{
-                  location.href="cartlist.cart?pset="+pset+"&pnum="+pnum+"&qty="+qty;
-               }
-           
+             else if(login == "" || login == null || login == "null"){
+               alert("로그인을 해주세요.");     
+               location.href="loginForm.me?pnum="+pnum; 
+            
+            }else{
+                     location.href="cartlist.cart?pset="+pset+"&pnum="+pnum+"&qty="+qty;
+                  }
+              
          }
          
    }
